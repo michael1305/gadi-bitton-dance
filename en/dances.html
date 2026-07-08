@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Dances | Israeli Folk Dance Catalog — Gadi Bitton</title>
+<meta name="description" content="Full catalog of over 340 Israeli folk dances composed by Gadi Bitton — search by name, year, style, and performer.">
+<link rel="icon" type="image/png" href="../images/site/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <img src="../images/site/logo.png" alt="Gadi Bitton — Israeli Dance" class="logo-full">
+      <img src="../images/site/icon.png" alt="Gadi Bitton" class="logo-icon-mobile">
+      <span class="logo-tagline">Israeli Dance</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="production.html">Production</a></li>
+        <li><a href="dances.html" class="active">My Dances</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../dances.html" class="lang-switch">עברית</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / My Dances</div>
+    <span class="eyebrow">Dance Catalog</span>
+    <h1>My Dances</h1>
+    <p>Over 340 original dances composed by Gadi Bitton over the years. Search by name, year, or performer, and filter by dance style.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="dances-toolbar">
+      <input type="search" id="danceSearch" placeholder="Search by dance name, performer, or year…" aria-label="Search dances">
+      <select id="formFilter" aria-label="Filter by dance style">
+        <option value="">All Styles</option>
+        <option value="זוגות">Couples</option>
+        <option value="מעגלים">Circles</option>
+      </select>
+      <span class="dances-count">Loading…</span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="dances">
+        <thead>
+          <tr>
+            <th data-key="nameEn">Dance Name <span class="arrow">▲</span></th>
+            <th data-key="nameHe">Hebrew Name <span class="arrow"></span></th>
+            <th data-key="form">Style <span class="arrow"></span></th>
+            <th data-key="year">Year Composed <span class="arrow"></span></th>
+            <th data-key="performer">Performer <span class="arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="no-results" style="display:none;">No dances match your search.</div>
+    </div>
+  </div>
+</section>
+
+<div class="dance-modal-overlay">
+  <div class="dance-modal">
+    <span class="close">&times;</span>
+    <div class="dance-modal-header">
+      <img class="dm-photo" src="" alt="" style="display:none;">
+      <div class="no-photo" style="display:none;"><img src="../images/site/icon.png" alt=""></div>
+      <div>
+        <h3 class="dm-name-he"></h3>
+        <p class="en-name dm-name-en"></p>
+      </div>
+    </div>
+    <div class="dance-modal-body">
+      <div class="dance-meta-grid dm-meta"></div>
+      <div class="dance-section dm-videos-section" style="display:none;">
+        <h4>🎥 Videos</h4>
+        <div class="dance-videos dm-videos"></div>
+      </div>
+      <div class="dance-section dm-lyrics-section" style="display:none;">
+        <h4>📝 Lyrics (Hebrew)</h4>
+        <div class="dance-lyrics dm-lyrics"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4 class="footer-brand"><img src="../images/site/icon.png" alt="">Gadi Bitton — Israeli Dance</h4>
+        <p style="font-size:0.9rem;line-height:1.7;">Israeli folk dance session leader, choreographer, and event producer. Promoting Israeli folk dance in Israel and around the world for over three decades.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/Machol.Israeli.Gadi.Bitton/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/gadi_bitton/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://www.youtube.com/user/gadibittondances" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="about.html">About</a>
+        <a href="dances.html">My Dances</a>
+        <a href="classes.html">Classes</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="media.html">Media</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+97235328993">03-5328993</a>
+        <a href="mailto:info@gadibitton.co.il">info@gadibitton.co.il</a>
+        <a href="contact.html">Contact Form</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Gadi Bitton — Israeli Dance. All rights reserved.</span>
+      <span>Redesigned 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>window.SITE_BASE = '../';</script>
+<script src="../js/main.js"></script>
+<script src="../js/dances.js"></script>
+</body>
+</html>

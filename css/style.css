@@ -105,6 +105,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: #fff;
 }
 
+.main-nav a.lang-switch {
+  border: 1.5px solid var(--line);
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+.main-nav a.lang-switch:hover {
+  background: var(--gold);
+  color: var(--plum-deep);
+  border-color: var(--gold);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -810,3 +821,31 @@ form.contact-form button { align-self: flex-start; border: none; cursor: pointer
   section.section { padding: 56px 0; }
   .dances-toolbar { flex-direction: column; align-items: stretch; }
 }
+
+/* ---------- LTR (English) mirroring ---------- */
+html[dir="ltr"] body { direction: ltr; }
+
+html[dir="ltr"] .logo-tagline {
+  border-right: none;
+  border-left: 1px solid var(--line);
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+html[dir="ltr"] .hero-photo .badge {
+  right: auto;
+  left: -18px;
+}
+
+html[dir="ltr"] .section-head.left { text-align: left; }
+
+html[dir="ltr"] .prose ul li {
+  padding-right: 0;
+  padding-left: 24px;
+}
+html[dir="ltr"] .prose ul li::before {
+  right: auto;
+  left: 0;
+}
+
+html[dir="ltr"] table.dances th { text-align: left; }
