@@ -33,6 +33,11 @@
     return '<span class="tag other">' + escapeHtml(label) + '</span>';
   }
 
+  function loc(dance, field) {
+    if (LANG === 'en' && dance[field + 'En']) return dance[field + 'En'];
+    return dance[field];
+  }
+
   function escapeHtml(str) {
     var div = document.createElement('div');
     div.textContent = str == null ? '' : str;
@@ -44,7 +49,7 @@
     var rows = state.data.filter(function (d) {
       if (state.form && d.form !== state.form) return false;
       if (!q) return true;
-      return (d.nameHe + ' ' + d.nameEn + ' ' + d.performer + ' ' + d.year).indexOf(q) > -1;
+      return (d.nameHe + ' ' + d.nameEn + ' ' + d.performer + ' ' + (d.performerEn || '') + ' ' + d.year).indexOf(q) > -1;
     });
 
     rows.sort(function (a, b) {
@@ -66,18 +71,27 @@
     noResults.style.display = 'none';
     table.style.display = 'table';
 
-    var firstKey = LANG === 'en' ? 'nameEn' : 'nameHe';
-    var secondKey = LANG === 'en' ? 'nameHe' : 'nameEn';
-
-    var html = rows.map(function (d) {
-      return '<tr data-id="' + d.id + '">' +
-        '<td class="name">' + escapeHtml(d[firstKey]) + '</td>' +
-        '<td>' + escapeHtml(d[secondKey]) + '</td>' +
-        '<td>' + formTag(d.form) + '</td>' +
-        '<td>' + escapeHtml(d.year) + '</td>' +
-        '<td>' + escapeHtml(d.performer) + '</td>' +
-        '</tr>';
-    }).join('');
+    var html;
+    if (LANG === 'en') {
+      html = rows.map(function (d) {
+        return '<tr data-id="' + d.id + '">' +
+          '<td class="name">' + escapeHtml(d.nameEn) + '</td>' +
+          '<td>' + formTag(d.form) + '</td>' +
+          '<td>' + escapeHtml(d.year) + '</td>' +
+          '<td>' + escapeHtml(loc(d, 'performer')) + '</td>' +
+          '</tr>';
+      }).join('');
+    } else {
+      html = rows.map(function (d) {
+        return '<tr data-id="' + d.id + '">' +
+          '<td class="name">' + escapeHtml(d.nameHe) + '</td>' +
+          '<td>' + escapeHtml(d.nameEn) + '</td>' +
+          '<td>' + formTag(d.form) + '</td>' +
+          '<td>' + escapeHtml(d.year) + '</td>' +
+          '<td>' + escapeHtml(d.performer) + '</td>' +
+          '</tr>';
+      }).join('');
+    }
     tbody.innerHTML = html;
   }
 
@@ -106,12 +120,12 @@
     overlay.querySelector('.dm-name-en').textContent = secondaryName;
 
     overlay.querySelector('.dm-meta').innerHTML =
-      metaItem(S.metaLabels.choreographer, dance.choreographer) +
+      metaItem(S.metaLabels.choreographer, loc(dance, 'choreographer')) +
       metaItem(S.metaLabels.form, S.formNames[dance.form] || dance.form) +
       metaItem(S.metaLabels.year, dance.year) +
-      metaItem(S.metaLabels.performer, dance.performer) +
-      metaItem(S.metaLabels.lyricist, dance.lyricist) +
-      metaItem(S.metaLabels.composer, dance.composer);
+      metaItem(S.metaLabels.performer, loc(dance, 'performer')) +
+      metaItem(S.metaLabels.lyricist, loc(dance, 'lyricist')) +
+      metaItem(S.metaLabels.composer, loc(dance, 'composer'));
 
     var videosSection = overlay.querySelector('.dm-videos-section');
     var videosWrap = overlay.querySelector('.dm-videos');
