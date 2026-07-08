@@ -27,6 +27,9 @@ All content/images scraped from the live legacy site (not placeholders). Real br
 - `images/site/icon.png` / `favicon.png` — standalone circular leaping-dancer mark (from user's `LOGO C.jpg`, circle-masked to transparent PNG), used as favicon, mobile-compact header logo, footer brand mark, and the dance-modal no-photo fallback
 - `images/dances/{id}.jpg` — 332 performer photos (incl. 4 legacy BMP files converted via `bmp-js`)
 
+## English (LTR) version
+Full English translation of all 8 pages lives under `/en/` (e.g. `en/about.html`), sharing `css/style.css`, `js/main.js`, `js/dances.js`, `data/dances.json`, and all `images/` with the Hebrew site via `../` relative paths. Each Hebrew page has an "English" nav link to its `/en/` counterpart, and vice versa ("עברית" link back). `js/dances.js` is now i18n-aware: it reads `document.documentElement.lang` for UI strings (counts, meta labels, video tab labels, dance-style names) and `window.SITE_BASE` (set inline to `'../'` only on English pages) to resolve the JSON fetch and photo paths correctly from the subfolder. `css/style.css` has an `html[dir="ltr"]` override block at the bottom for the handful of hardcoded RTL-physical properties (bullet position, hero badge corner, logo-tagline border, table header alignment) — everything else (grids/flex) mirrors automatically via the `direction` property.
+
 ## Deliberately out of scope
 Hundreds of historical event-archive pages (1996–2016, per venue/year) from the original site were **excluded by explicit user choice** — not an oversight. If asked to add "the old events" or similar, that's this archive.
 
