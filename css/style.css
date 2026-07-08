@@ -61,18 +61,30 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .logo {
   display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
 
-.logo strong {
+.logo-text strong {
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--plum);
   letter-spacing: -0.5px;
 }
 
-.logo span {
+.logo-text span {
   font-size: 0.72rem;
   color: var(--gold-deep);
   font-weight: 500;
