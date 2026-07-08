@@ -62,33 +62,21 @@ ul { margin: 0; padding: 0; list-style: none; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
-.logo-icon {
-  width: 46px;
-  height: 46px;
-  flex-shrink: 0;
+.logo-full {
+  height: 42px;
+  width: auto;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logo-text strong {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--plum);
-  letter-spacing: -0.5px;
-}
-
-.logo-text span {
+.logo-tagline {
   font-size: 0.72rem;
   color: var(--gold-deep);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
+  border-right: 1px solid var(--line);
+  padding-right: 10px;
 }
 
 .main-nav ul {
