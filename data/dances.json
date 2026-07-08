@@ -1,0 +1,3062 @@
+[
+  {
+    "id": "269",
+    "nameHe": "אבל אהבה",
+    "nameEn": "Aval Ahava",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1998",
+    "performer": "אחינועם ניני"
+  },
+  {
+    "id": "4",
+    "nameHe": "אגדת הסולטן",
+    "nameEn": "Agadat Hasultan",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1995",
+    "performer": "גליקריה"
+  },
+  {
+    "id": "5",
+    "nameHe": "אגו טריפ",
+    "nameEn": "Ego Trip",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2008",
+    "performer": "עלמה זוהר"
+  },
+  {
+    "id": "207",
+    "nameHe": "אדון עולם",
+    "nameEn": "Adon Olam",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2010",
+    "performer": "דקלון"
+  },
+  {
+    "id": "6",
+    "nameHe": "אדמה ושמיים",
+    "nameEn": "Adama Ve Shamayim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "להקת סגול"
+  },
+  {
+    "id": "7",
+    "nameHe": "אהבה",
+    "nameEn": "Ahava",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1998",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "8",
+    "nameHe": "אהבה אלוהית",
+    "nameEn": "Ahava Elohit",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2000",
+    "performer": "ליאורה סימון"
+  },
+  {
+    "id": "9",
+    "nameHe": "אהבה קצרה",
+    "nameEn": "Ahava Ktzara",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1992",
+    "performer": "מאיר בנאי"
+  },
+  {
+    "id": "200",
+    "nameHe": "אהיה",
+    "nameEn": "Eheye",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "עופרי סאלם"
+  },
+  {
+    "id": "10",
+    "nameHe": "אוהבת לא אוהבת",
+    "nameEn": "Ohevet Lo Ohevet",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "ארכדי דוכין"
+  },
+  {
+    "id": "11",
+    "nameHe": "אולי על שפת הים",
+    "nameEn": "Ulay Al Sfat Hayam",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "יהורם גאון"
+  },
+  {
+    "id": "270",
+    "nameHe": "אומרים ישנה ארץ",
+    "nameEn": "Omrim Yeshna Eretz",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "353",
+    "nameHe": "אוספת רגעים",
+    "nameEn": "Osefet Regaim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2017",
+    "performer": "יונתן ביטון"
+  },
+  {
+    "id": "12",
+    "nameHe": "אור חדש",
+    "nameEn": "Or Chadash",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "ראובן ארז"
+  },
+  {
+    "id": "13",
+    "nameHe": "אור שבעת הימים",
+    "nameEn": "Or Shivat Hayamim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "אבי פרץ וירנה ארזי"
+  },
+  {
+    "id": "261",
+    "nameHe": "אז תרקדי",
+    "nameEn": "Az Tirkedi",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "מיכאל ושמרית גריילסאמר"
+  },
+  {
+    "id": "14",
+    "nameHe": "אחד",
+    "nameEn": "Echad",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "נקמת הטרקטור"
+  },
+  {
+    "id": "296",
+    "nameHe": "אחלה חמודה",
+    "nameEn": "Achla Chamuda",
+    "choreographer": "גדי ביטון, ירון כרמל, ירון בן שמחון וערן ביטון",
+    "form": "שורות",
+    "year": "2011",
+    "performer": "בני בשן"
+  },
+  {
+    "id": "342",
+    "nameHe": "אחרי כל השנים",
+    "nameEn": "Acheri Kol HaSanim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2016",
+    "performer": "עומר אדם"
+  },
+  {
+    "id": "218",
+    "nameHe": "אחרית הימים",
+    "nameEn": "Acharit Ha'yamim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "רוני ידידיה"
+  },
+  {
+    "id": "16",
+    "nameHe": "איך את",
+    "nameEn": "Eich At",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2000",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "17",
+    "nameHe": "איך הוא שר",
+    "nameEn": "Eich Hu Shar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1996",
+    "performer": "דני רובס"
+  },
+  {
+    "id": "18",
+    "nameHe": "איך עולם ממשיך לנוע",
+    "nameEn": "Eich Olam Mamshich Lanua",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "שבי בר"
+  },
+  {
+    "id": "271",
+    "nameHe": "איך שבאת",
+    "nameEn": "Eich SheBat",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "272",
+    "nameHe": "אין יפה ממנה",
+    "nameEn": "Ein Yaffa Mimena",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2005",
+    "performer": "חיים משה"
+  },
+  {
+    "id": "19",
+    "nameHe": "אין לי דבר",
+    "nameEn": "Ein Li Davar",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2007",
+    "performer": "הראל מויאל"
+  },
+  {
+    "id": "322",
+    "nameHe": "אין לי שקט",
+    "nameEn": "Ein li Sheket",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "199",
+    "nameHe": "אין מקום אחר",
+    "nameEn": "Ein Makom Acher",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2010",
+    "performer": "משינה"
+  },
+  {
+    "id": "20",
+    "nameHe": "איפה את",
+    "nameEn": "Eifo At",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2007",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "241",
+    "nameHe": "איפה את היום",
+    "nameEn": "Eifo At Hayom",
+    "choreographer": "גדי ביטון ומשה טווילי",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "דורון מזר"
+  },
+  {
+    "id": "185",
+    "nameHe": "אישה יפה",
+    "nameEn": "Isha Yaffa",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "שחר אבן צור"
+  },
+  {
+    "id": "31",
+    "nameHe": "אישה לבדה במדבר",
+    "nameEn": "Esha Levada Bamidbar",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "רון שובל"
+  },
+  {
+    "id": "236",
+    "nameHe": "אל נא תלכי",
+    "nameEn": "Al Na Telchi",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "273",
+    "nameHe": "אל תדאג",
+    "nameEn": "Al Tid'ag",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "גאיה"
+  },
+  {
+    "id": "329",
+    "nameHe": "אלוהים יודע",
+    "nameEn": "",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2015",
+    "performer": ""
+  },
+  {
+    "id": "265",
+    "nameHe": "אלוני ממרא",
+    "nameEn": "Alone Mam're",
+    "choreographer": "גדי ביטון ופנינה קליין",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "משה להב וקום צפריר"
+  },
+  {
+    "id": "212",
+    "nameHe": "אם לא מתי אתמול",
+    "nameEn": "Im Lo Mati Etmol",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "יוני יעיש"
+  },
+  {
+    "id": "361",
+    "nameHe": "אם רק תסכימי",
+    "nameEn": "Im Rak Taskimi",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2020",
+    "performer": "יהורם גאון"
+  },
+  {
+    "id": "21",
+    "nameHe": "אם תרצי לדעת",
+    "nameEn": "Im Tirtzi Lada'at",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "319",
+    "nameHe": "אמנון ותמר",
+    "nameEn": "Amnon VeTamar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "רמי קלינשטיין"
+  },
+  {
+    "id": "22",
+    "nameHe": "אנא בכוח",
+    "nameEn": "Ana Bechoach",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "עובדיה חממה"
+  },
+  {
+    "id": "23",
+    "nameHe": "אני מת",
+    "nameEn": "Ani Met",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "הדורבנים"
+  },
+  {
+    "id": "300",
+    "nameHe": "אני עובר בסמטאות",
+    "nameEn": "Ani Over BaSimta'ot",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "בועז שרעבי"
+  },
+  {
+    "id": "24",
+    "nameHe": "אני קורא בשמך",
+    "nameEn": "Ani Kore Bishmech",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2000",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "181",
+    "nameHe": "אני שלך",
+    "nameEn": "Ani Shelach",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "משה פרץ"
+  },
+  {
+    "id": "25",
+    "nameHe": "אני שר לך",
+    "nameEn": "Ani Shar Lach",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2000",
+    "performer": "אורנה ומשה דץ"
+  },
+  {
+    "id": "333",
+    "nameHe": "אנשים טובים",
+    "nameEn": "Anashim Tovim",
+    "choreographer": "גדי ביטון ורויטל גולן",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "רמי קלינשטיין"
+  },
+  {
+    "id": "26",
+    "nameHe": "אפילו ששריפות",
+    "nameEn": "Afilu Shesrefot",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "הראל סקעת"
+  },
+  {
+    "id": "27",
+    "nameHe": "אפריים",
+    "nameEn": "Efrayim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "רונן עניא"
+  },
+  {
+    "id": "28",
+    "nameHe": "אצבעות שוקולד",
+    "nameEn": "Etzbaot Shokolad",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1998",
+    "performer": "אריק אנשטיין"
+  },
+  {
+    "id": "356",
+    "nameHe": "ארבע עונות",
+    "nameEn": "Arba Onot",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2018",
+    "performer": "אבי סינואני"
+  },
+  {
+    "id": "29",
+    "nameHe": "ארץ אבודה",
+    "nameEn": "Eretz Avuda",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "30",
+    "nameHe": "ארץ חדשה",
+    "nameEn": "Eretz Chadasha",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2008",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "276",
+    "nameHe": "ארץ מאושרת",
+    "nameEn": "Eretz Me'usheret",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "שימי רון"
+  },
+  {
+    "id": "264",
+    "nameHe": "אש",
+    "nameEn": "Esh",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "רמי קלינשטיין"
+  },
+  {
+    "id": "177",
+    "nameHe": "את",
+    "nameEn": "At",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2007",
+    "performer": "הראל מויאל"
+  },
+  {
+    "id": "169",
+    "nameHe": "את כל חיי",
+    "nameEn": "At Kol Chayay",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "32",
+    "nameHe": "את לא עונה",
+    "nameEn": "At Lo Ona",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "שלומי שבת ושלישית מה קשור"
+  },
+  {
+    "id": "206",
+    "nameHe": "את לי הבית",
+    "nameEn": "At Li Ha'bait",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2010",
+    "performer": "אביהו מדינה ויואב יצחק"
+  },
+  {
+    "id": "274",
+    "nameHe": "אתה הולך לישון מוקדם",
+    "nameEn": "Ata Holech Lishon Mukdam",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2001",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "33",
+    "nameHe": "אתה קורא לי",
+    "nameEn": "Ata Kore Li",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "עופרה חזה"
+  },
+  {
+    "id": "362",
+    "nameHe": "באת לי פתאום",
+    "nameEn": "Bat Li Pit'om",
+    "choreographer": "גדי ביטון ודרור דוידי",
+    "form": "מעגלים",
+    "year": "2020",
+    "performer": "קרן פלס ורוני אלטר"
+  },
+  {
+    "id": "34",
+    "nameHe": "בגללך",
+    "nameEn": "Biglalech",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1995",
+    "performer": "אריק אנשטיין"
+  },
+  {
+    "id": "204",
+    "nameHe": "בדרך אלייך",
+    "nameEn": "Baderech Eelaich",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2010",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "347",
+    "nameHe": "בואי בשלום",
+    "nameEn": "Boi BeShalom",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2017",
+    "performer": "דקלון וסגיב כהן"
+  },
+  {
+    "id": "170",
+    "nameHe": "בואי נעזוב",
+    "nameEn": "Boi Naazov",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "רן דנקר"
+  },
+  {
+    "id": "35",
+    "nameHe": "בואי נתחבק",
+    "nameEn": "Boi Nitchabek",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "אלון אולארצ'ק"
+  },
+  {
+    "id": "165",
+    "nameHe": "בובה מרה",
+    "nameEn": "Buba Mara",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2008",
+    "performer": ""
+  },
+  {
+    "id": "344",
+    "nameHe": "בחמש שניות",
+    "nameEn": "Be'Chamesh Shniyot",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2016",
+    "performer": "עידן רייכל"
+  },
+  {
+    "id": "328",
+    "nameHe": "בחצוצרות",
+    "nameEn": "Bachatzotzros",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "דוד דאור"
+  },
+  {
+    "id": "215",
+    "nameHe": "ביוטיפול",
+    "nameEn": "Beutiful",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "דודו אהרון"
+  },
+  {
+    "id": "258",
+    "nameHe": "בין האצבעות",
+    "nameEn": "Bein Ha'etzbaot",
+    "choreographer": "גדי ביטון ורועי פרידמן",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "מושיק עפיה"
+  },
+  {
+    "id": "37",
+    "nameHe": "בין הטוב והרע",
+    "nameEn": "Bein Hatov Ve'hara",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2003",
+    "performer": "אייל גולן"
+  },
+  {
+    "id": "216",
+    "nameHe": "בין קשת לענן",
+    "nameEn": "Bein Keshet Le'anan",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2010",
+    "performer": "אבנר גדסי ושלומי שבת"
+  },
+  {
+    "id": "324",
+    "nameHe": "בכל אשר תלכי",
+    "nameEn": "Bechol Asher Telchi",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "סגיב כהן ונתנאל"
+  },
+  {
+    "id": "359",
+    "nameHe": "בלב",
+    "nameEn": "Balev",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2018",
+    "performer": "רותם כהן"
+  },
+  {
+    "id": "237",
+    "nameHe": "בלילה",
+    "nameEn": "Balayla",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "הפרוייקט של עידן רייכל"
+  },
+  {
+    "id": "38",
+    "nameHe": "בלילה",
+    "nameEn": "Balayla",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "יצחק קלפטר ויעל לוי"
+  },
+  {
+    "id": "39",
+    "nameHe": "במבולאו",
+    "nameEn": "Bamboleo",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2002",
+    "performer": "ג'יפסי קינג"
+  },
+  {
+    "id": "203",
+    "nameHe": "במקום פרידה",
+    "nameEn": "Bimkom Preda",
+    "choreographer": "גדי ביטון ועירית שוורץ",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "מיכה ביטון"
+  },
+  {
+    "id": "217",
+    "nameHe": "בנדרי",
+    "nameEn": "Bandari",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "חאסן סמזאד"
+  },
+  {
+    "id": "277",
+    "nameHe": "בראשית עולם",
+    "nameEn": "Bereshit Olam",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "40",
+    "nameHe": "ברגע המכריע",
+    "nameEn": "Barega Hamachriah",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2008",
+    "performer": "שמעון בוסקילה"
+  },
+  {
+    "id": "334",
+    "nameHe": "ברוך אהיה",
+    "nameEn": "Baroch Ehehia",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "סגיב כהן וציון גולן"
+  },
+  {
+    "id": "307",
+    "nameHe": "ברכת הדרך (כי מלאכיו)",
+    "nameEn": "Birkat Haderech",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "סגיב כהן ואגם בוחבוט"
+  },
+  {
+    "id": "303",
+    "nameHe": "בשר ודם",
+    "nameEn": "Basar VaDam",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "איילה אינגדשט"
+  },
+  {
+    "id": "41",
+    "nameHe": "בת הדייג",
+    "nameEn": "Bat Hadayag",
+    "choreographer": "גדי ביטון וויקטור גבאי",
+    "form": "זוגות",
+    "year": "1990",
+    "performer": "דקלון"
+  },
+  {
+    "id": "42",
+    "nameHe": "בת צועניה",
+    "nameEn": "Bat Zoaniya",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2007",
+    "performer": "שבי בר"
+  },
+  {
+    "id": "43",
+    "nameHe": "בתוך",
+    "nameEn": "Betoch",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "ארתור גורביץ'"
+  },
+  {
+    "id": "267",
+    "nameHe": "גו גו גו",
+    "nameEn": "Go Go Go",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "1998",
+    "performer": "ריקי מרטין"
+  },
+  {
+    "id": "326",
+    "nameHe": "גולדן בוי",
+    "nameEn": "Golden Boy",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2015",
+    "performer": "נדב גדג'"
+  },
+  {
+    "id": "44",
+    "nameHe": "ג'מע במדבר",
+    "nameEn": "Jamaha Bamidbar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1999",
+    "performer": "גאיה"
+  },
+  {
+    "id": "222",
+    "nameHe": "גשם אהבה",
+    "nameEn": "Geshem Ahava",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "45",
+    "nameHe": "דירה 26",
+    "nameEn": "Dira 26",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1998",
+    "performer": "רמי קלינשטיין"
+  },
+  {
+    "id": "301",
+    "nameHe": "דף חדש",
+    "nameEn": "Daf Chadash",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "46",
+    "nameHe": "דרג'ה",
+    "nameEn": "Darja",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1997",
+    "performer": "עשב בר"
+  },
+  {
+    "id": "297",
+    "nameHe": "דרור יקרא",
+    "nameEn": "Dror Yikra",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "יונתן רזאל"
+  },
+  {
+    "id": "47",
+    "nameHe": "דרכנו",
+    "nameEn": "Darkenu",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "הבורגנים"
+  },
+  {
+    "id": "48",
+    "nameHe": "האהבה שלי",
+    "nameEn": "Haahava Sheli",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "יצחק קלפטר"
+  },
+  {
+    "id": "243",
+    "nameHe": "האיש ההוא",
+    "nameEn": "HaIsh HaHu",
+    "choreographer": "גדי ביטון וקובי מיכאלי",
+    "form": "מעגלים",
+    "year": "2006",
+    "performer": "יהודית רביץ"
+  },
+  {
+    "id": "233",
+    "nameHe": "הביתה הלוך חזור",
+    "nameEn": "Habayta Haloch Chazor",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "הפרוייקט של עידן רייכל"
+  },
+  {
+    "id": "182",
+    "nameHe": "הגשמה עצמית",
+    "nameEn": "Hagshama Atzmit",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "אריק ברמן"
+  },
+  {
+    "id": "193",
+    "nameHe": "הופה",
+    "nameEn": "Hopa",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2010",
+    "performer": "עומר אדם"
+  },
+  {
+    "id": "225",
+    "nameHe": "הופעת בחיי",
+    "nameEn": "Hofa't Be'cha'yay",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2012",
+    "performer": "טל שגב"
+  },
+  {
+    "id": "275",
+    "nameHe": "הורה אחרת",
+    "nameEn": "Hora Acheret",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1996",
+    "performer": "אורי כהן"
+  },
+  {
+    "id": "278",
+    "nameHe": "הזמנה לחתונה",
+    "nameEn": "Hazmana LeHatuna",
+    "choreographer": "גדי ביטון",
+    "form": "",
+    "year": "2009",
+    "performer": "אורי בנאי"
+  },
+  {
+    "id": "49",
+    "nameHe": "החברה להגנת הטבע",
+    "nameEn": "Hachevra Lehaganat Hateva",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2006",
+    "performer": "אריאל זילבר"
+  },
+  {
+    "id": "164",
+    "nameHe": "החול יזכור",
+    "nameEn": "Hachol Yizkor",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "הראל סקעת"
+  },
+  {
+    "id": "340",
+    "nameHe": "החורף מלא בגעגועים",
+    "nameEn": "Hachoref Male BeGaaguim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2016",
+    "performer": "מתי כספי"
+  },
+  {
+    "id": "50",
+    "nameHe": "היא לא יודעת מה עובר עליי",
+    "nameEn": "He Lo Yodaat Ma Over Alay",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1997",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "51",
+    "nameHe": "היה חזק",
+    "nameEn": "Heye Chazak",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1999",
+    "performer": "בועז שרעבי"
+  },
+  {
+    "id": "52",
+    "nameHe": "היה לי חבר",
+    "nameEn": "Heye Li Chaver",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "דודו טסה"
+  },
+  {
+    "id": "53",
+    "nameHe": "היום הזה",
+    "nameEn": "Hayom Haze",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "172",
+    "nameHe": "היידה",
+    "nameEn": "Hayde",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "54",
+    "nameHe": "הילולה",
+    "nameEn": "Hilula",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "אינסטרומנטלי"
+  },
+  {
+    "id": "55",
+    "nameHe": "הילולים",
+    "nameEn": "Hilulim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "להקת הילולה"
+  },
+  {
+    "id": "279",
+    "nameHe": "הכוס הכחולה",
+    "nameEn": "Hakos HaKchula",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2000",
+    "performer": "עברי לידר"
+  },
+  {
+    "id": "213",
+    "nameHe": "הכל בשבילך",
+    "nameEn": "Hakol Bishvilech",
+    "choreographer": "גדי ביטון וערן ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "280",
+    "nameHe": "הכניסיני תחת כנפך",
+    "nameEn": "Hachnisini Tachat Knafech",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1999",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "56",
+    "nameHe": "הכרם",
+    "nameEn": "Hakerem",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "אתניקס"
+  },
+  {
+    "id": "298",
+    "nameHe": "הלב",
+    "nameEn": "HaLev",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "166",
+    "nameHe": "הלב שלי",
+    "nameEn": "Halev Sheli",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2008",
+    "performer": "אייל גולן"
+  },
+  {
+    "id": "57",
+    "nameHe": "הלהקה",
+    "nameEn": "Halehaka",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "להקת הנח\"ל"
+  },
+  {
+    "id": "58",
+    "nameHe": "הלוואי",
+    "nameEn": "Halevay",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1999",
+    "performer": "יהודית רביץ"
+  },
+  {
+    "id": "238",
+    "nameHe": "הלל הללויה",
+    "nameEn": "Hallel Hallelujah",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2013",
+    "performer": "דודו פישר"
+  },
+  {
+    "id": "59",
+    "nameHe": "הללויה",
+    "nameEn": "Haleluya",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1995",
+    "performer": "להקת הנח\"ל"
+  },
+  {
+    "id": "60",
+    "nameHe": "המיסטיקנים הסינים",
+    "nameEn": "Hamistikanim Asinim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1996",
+    "performer": "נורית גלרון"
+  },
+  {
+    "id": "339",
+    "nameHe": "המלח",
+    "nameEn": "Hamalach",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2016",
+    "performer": "דקלון וסגיב כהן"
+  },
+  {
+    "id": "179",
+    "nameHe": "הנה אני כולי שלך",
+    "nameEn": "Hine Ani Kuli Shelcha",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "להקת סגול"
+  },
+  {
+    "id": "299",
+    "nameHe": "הסלע האדום",
+    "nameEn": "HaSela Ha'Adom",
+    "choreographer": "גדי ביטון וירון כרמל",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "רפי גינת"
+  },
+  {
+    "id": "227",
+    "nameHe": "הצחוק של אלה",
+    "nameEn": "Ha'Tzchok Shel Ella",
+    "choreographer": "גדי ביטון ושרון אלקסלסי",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "הראל מויאל"
+  },
+  {
+    "id": "171",
+    "nameHe": "הרוח תשנה את כיוונה",
+    "nameEn": "Haruach Teshane Et Kivuna",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "הראל סקעת"
+  },
+  {
+    "id": "61",
+    "nameHe": "הרצל",
+    "nameEn": "Hertzel",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2006",
+    "performer": "להקת גייסות השיריון"
+  },
+  {
+    "id": "62",
+    "nameHe": "השיר על ארץ סיני",
+    "nameEn": "Hashir Al Eretz Sinay",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1997",
+    "performer": "ששי קשת"
+  },
+  {
+    "id": "63",
+    "nameHe": "השיר שיביא לך אהבה",
+    "nameEn": "Hashir Sheyavi Lecha aAava",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "גלי עטרי"
+  },
+  {
+    "id": "263",
+    "nameHe": "התגשמי לי",
+    "nameEn": "Hitgashmi Li",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "64",
+    "nameHe": "התקוה חוזרת ללב",
+    "nameEn": "Hatikva Chozeret Lalev",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "65",
+    "nameHe": "ונשגב",
+    "nameEn": "Venisgav",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "שחקני הסרט \"הסודות\""
+  },
+  {
+    "id": "281",
+    "nameHe": "ועכשיו",
+    "nameEn": "Ve'Achshav",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "לירן נדל"
+  },
+  {
+    "id": "66",
+    "nameHe": "זה הזמן הנכון",
+    "nameEn": "Ze Hazman Hanachon",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "ארתור גורביץ'"
+  },
+  {
+    "id": "350",
+    "nameHe": "זהב",
+    "nameEn": "Zahav",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2017",
+    "performer": "סטטיק ובן-אל תבורי"
+  },
+  {
+    "id": "318",
+    "nameHe": "זיכרון שלא עוזב",
+    "nameEn": "Zicron Shelu Ozev",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2015",
+    "performer": "אבי טולדנו"
+  },
+  {
+    "id": "67",
+    "nameHe": "חגיגאיה",
+    "nameEn": "Chagigaya",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "גאיה"
+  },
+  {
+    "id": "68",
+    "nameHe": "חופשי ומאושר",
+    "nameEn": "Chofshi U'Meushar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "חן מאושר"
+  },
+  {
+    "id": "201",
+    "nameHe": "חיכיתי שתגיע",
+    "nameEn": "Chikiti She'tagia",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "ענבל ובועז שרעבי"
+  },
+  {
+    "id": "202",
+    "nameHe": "חכי",
+    "nameEn": "Chaki",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2010",
+    "performer": "עמי אור"
+  },
+  {
+    "id": "69",
+    "nameHe": "חכי עוד רגע",
+    "nameEn": "Chaki Od Rega",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2003",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "70",
+    "nameHe": "חלום",
+    "nameEn": "Chalom",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "סהרה ואבי בניון"
+  },
+  {
+    "id": "71",
+    "nameHe": "חלומות",
+    "nameEn": "Chalomot",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "אייל גולן"
+  },
+  {
+    "id": "72",
+    "nameHe": "חמסה",
+    "nameEn": "Chamsa",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1996",
+    "performer": "אינסטרומנטלי"
+  },
+  {
+    "id": "354",
+    "nameHe": "חתונת השנה",
+    "nameEn": "Chatunat Hashana",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2017",
+    "performer": "איתי לוי ואייל גולן"
+  },
+  {
+    "id": "343",
+    "nameHe": "טיסה 5325",
+    "nameEn": "Tisa 5325",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2016",
+    "performer": "משה פרץ"
+  },
+  {
+    "id": "73",
+    "nameHe": "ידיעה",
+    "nameEn": "Yedia'a",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "שוטי הנבואה"
+  },
+  {
+    "id": "74",
+    "nameHe": "יה ריה",
+    "nameEn": "Ya Raya",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "אנדלוסית"
+  },
+  {
+    "id": "304",
+    "nameHe": "יהיה מה שיהיה",
+    "nameEn": "I'ye Ma She'I'ye",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "גיא גמזו"
+  },
+  {
+    "id": "75",
+    "nameHe": "יהללו",
+    "nameEn": "Yehalelu",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "76",
+    "nameHe": "יובל",
+    "nameEn": "Yovel",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "הכל עובר חביבי"
+  },
+  {
+    "id": "228",
+    "nameHe": "יום קדוש",
+    "nameEn": "Yom Kadosh",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2012",
+    "performer": "גלעד שגב"
+  },
+  {
+    "id": "351",
+    "nameHe": "יונתי תמתי",
+    "nameEn": "Yonati Tmati",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2017",
+    "performer": "נסים גרמה"
+  },
+  {
+    "id": "331",
+    "nameHe": "יוסף",
+    "nameEn": "",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "229",
+    "nameHe": "יורקת אש",
+    "nameEn": "Yoreket Esh",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "77",
+    "nameHe": "יושבים בבית קפה",
+    "nameEn": "Yoshvim Bebet Caffe",
+    "choreographer": "גדי ביטון וירון בן שמחון",
+    "form": "זוגות",
+    "year": "2001",
+    "performer": "טיפקס"
+  },
+  {
+    "id": "247",
+    "nameHe": "יחד",
+    "nameEn": "Yachad",
+    "choreographer": "גדי ביטון ודודו ברזילי",
+    "form": "מעגלים",
+    "year": "1999",
+    "performer": "להקת גאיה ודין דין אביב"
+  },
+  {
+    "id": "282",
+    "nameHe": "ילדה סוכר",
+    "nameEn": "Yalda Sucar",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2003",
+    "performer": "מוקי"
+  },
+  {
+    "id": "302",
+    "nameHe": "ילדים טובים",
+    "nameEn": "Yeladim Tovim",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "1984",
+    "performer": "יהודית רביץ"
+  },
+  {
+    "id": "78",
+    "nameHe": "ים הדממה",
+    "nameEn": "Yam Hadmama",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "יוני רועה ואלכס"
+  },
+  {
+    "id": "287",
+    "nameHe": "ים המלח",
+    "nameEn": "Yam HaMelach",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "מוש בן ארי"
+  },
+  {
+    "id": "286",
+    "nameHe": "ימי הולדת",
+    "nameEn": "Yemei Huledet",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2012",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "79",
+    "nameHe": "ימים טובים",
+    "nameEn": "Yamim Tovim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1995",
+    "performer": "גידי גוב ולאה שבת"
+  },
+  {
+    "id": "349",
+    "nameHe": "ימים יפים",
+    "nameEn": "yamim yafim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2017",
+    "performer": "מועדון הקצב של אביהו פנחסוב"
+  },
+  {
+    "id": "176",
+    "nameHe": "יעקב",
+    "nameEn": "Yaakov",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "ללדין"
+  },
+  {
+    "id": "246",
+    "nameHe": "יפה כלבנה",
+    "nameEn": "Yafa Kalevana",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "אביתר בנאי"
+  },
+  {
+    "id": "178",
+    "nameHe": "ירושלים",
+    "nameEn": "Yerushalayim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "80",
+    "nameHe": "יש חגיגה",
+    "nameEn": "Yesh Chagiga",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "232",
+    "nameHe": "יש שם במה",
+    "nameEn": "Yesh Shem Bama",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "358",
+    "nameHe": "ישראל שלי",
+    "nameEn": "Israel Sheli",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2018",
+    "performer": "ליאור נרקיס וירדנה ארזי"
+  },
+  {
+    "id": "81",
+    "nameHe": "ישראלית",
+    "nameEn": "Israelit",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "אילנית"
+  },
+  {
+    "id": "234",
+    "nameHe": "כול שי כלאם (הכל דיבורים)",
+    "nameEn": "Kol She Kalam",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "סגיב כהן ונדב קקון"
+  },
+  {
+    "id": "82",
+    "nameHe": "כח להמשיך",
+    "nameEn": "Ko'ach Le'amshich",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1997",
+    "performer": "בועז שרעבי"
+  },
+  {
+    "id": "348",
+    "nameHe": "כל החלומות",
+    "nameEn": "Kol HaChalomot",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2017",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "83",
+    "nameHe": "כל הנחלים",
+    "nameEn": "Kol Ha'Nechalim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "אריק לביא"
+  },
+  {
+    "id": "230",
+    "nameHe": "כל יום",
+    "nameEn": "Kol Yom",
+    "choreographer": "גדי ביטון ולוי ברגיל",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "84",
+    "nameHe": "כל יום נולד שתחזרי",
+    "nameEn": "Kol Yom Nolad She'Tachzeri",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "85",
+    "nameHe": "כמה אהבה",
+    "nameEn": "Kama Ahava",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1997",
+    "performer": "מאיר בנאי"
+  },
+  {
+    "id": "86",
+    "nameHe": "כמה את יפה",
+    "nameEn": "Kama At Yaffa",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2001",
+    "performer": "אפי תירוש"
+  },
+  {
+    "id": "87",
+    "nameHe": "כמה טוב בשניים",
+    "nameEn": "Kama Tov Bishnayim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "חן מאושר"
+  },
+  {
+    "id": "320",
+    "nameHe": "כמו כל יום",
+    "nameEn": "Kmo Kol Yom",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2015",
+    "performer": "עידן רפאל חביב"
+  },
+  {
+    "id": "317",
+    "nameHe": "כמו מים",
+    "nameEn": "Kmo Maim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2015",
+    "performer": "מיכה ביטון"
+  },
+  {
+    "id": "88",
+    "nameHe": "כן כן את יפה",
+    "nameEn": "Ken Ken At Yaffa",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "283",
+    "nameHe": "כשאת עצובה",
+    "nameEn": "Kshe'At Atzuva",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2001",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "284",
+    "nameHe": "כשאת שותקת",
+    "nameEn": "Kshe'At Shoteket",
+    "choreographer": "גדי ביטון",
+    "form": "",
+    "year": "",
+    "performer": "שלומי שבת ואבי סינואני"
+  },
+  {
+    "id": "89",
+    "nameHe": "לא אתן לגעת",
+    "nameEn": "Lo Eten Laga'at",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1994",
+    "performer": "טיפקס"
+  },
+  {
+    "id": "210",
+    "nameHe": "לא דומה לאף אחת",
+    "nameEn": "Lo Doma Le'af Achat",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "דודו אהרון"
+  },
+  {
+    "id": "90",
+    "nameHe": "לא דיברנו",
+    "nameEn": "Lo Dibarnu",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1996",
+    "performer": "גידי גוב ועופרה חזה"
+  },
+  {
+    "id": "91",
+    "nameHe": "לא יודע",
+    "nameEn": "Lo Yode'a",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1996",
+    "performer": "יהודה פוליקר"
+  },
+  {
+    "id": "209",
+    "nameHe": "לא מצאתי",
+    "nameEn": "Lo Matzati",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "92",
+    "nameHe": "לאלף נמר",
+    "nameEn": "Le'alef Namer",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2003",
+    "performer": "ריטה"
+  },
+  {
+    "id": "93",
+    "nameHe": "לגעת בריצפה",
+    "nameEn": "Lagaat Baritzpa",
+    "choreographer": "גדי ביטון ואיירה וייסבורד",
+    "form": "שורות",
+    "year": "1996",
+    "performer": "מייקל ג'קסון"
+  },
+  {
+    "id": "226",
+    "nameHe": "לו הייתי יכול",
+    "nameEn": "Lu Ha’iti Yachol",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2012",
+    "performer": "אייל גולן"
+  },
+  {
+    "id": "94",
+    "nameHe": "לו יהי",
+    "nameEn": "Lu Yehi",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "95",
+    "nameHe": "לולו",
+    "nameEn": "Lulu",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1996",
+    "performer": "אתי אנקרי"
+  },
+  {
+    "id": "173",
+    "nameHe": "לחזור הביתה",
+    "nameEn": "Lachazor Habayta",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "בועז מעודה"
+  },
+  {
+    "id": "96",
+    "nameHe": "לחיות אותך",
+    "nameEn": "Lichyot Otcha",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1994",
+    "performer": "ראובן ארז"
+  },
+  {
+    "id": "97",
+    "nameHe": "ליל חניה",
+    "nameEn": "Lel Chanaya",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "חנן יובל , ירדנה ארזי , אפרים שמיר"
+  },
+  {
+    "id": "98",
+    "nameHe": "לילה מה בל",
+    "nameEn": "Layla Mabelle",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "יזהר אשדות"
+  },
+  {
+    "id": "244",
+    "nameHe": "לינדה",
+    "nameEn": "Linda",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2013",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "99",
+    "nameHe": "לכי לך",
+    "nameEn": "Lechi Lach",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2005",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "220",
+    "nameHe": "ללכת",
+    "nameEn": "Lalechet",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "לירן דנינו"
+  },
+  {
+    "id": "167",
+    "nameHe": "ללכת יד ביד",
+    "nameEn": "Lalechet Yad Beyad",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "ישי ונתי לוי"
+  },
+  {
+    "id": "100",
+    "nameHe": "למדי אותי",
+    "nameEn": "Lamdi Oti",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2001",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "101",
+    "nameHe": "למה",
+    "nameEn": "Lama",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2008",
+    "performer": "מאיה אברהם"
+  },
+  {
+    "id": "266",
+    "nameHe": "לעוף איתך",
+    "nameEn": "La'uf Itach",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "שלישיית מה קשור"
+  },
+  {
+    "id": "102",
+    "nameHe": "לשיר בקול ערב",
+    "nameEn": "Lashir Bekol Arev",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "249",
+    "nameHe": "לשיר ברון",
+    "nameEn": "Lashir Be'Ron",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1994",
+    "performer": "בועז שרעבי"
+  },
+  {
+    "id": "240",
+    "nameHe": "מאריפוסה",
+    "nameEn": "Maripossa",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "355",
+    "nameHe": "מביט מהצד",
+    "nameEn": "Mabit Mehatzad",
+    "choreographer": "גדי ביטון ונפתלי קדוש",
+    "form": "זוגות",
+    "year": "2017",
+    "performer": "עומר אדם"
+  },
+  {
+    "id": "103",
+    "nameHe": "מדורת השבט",
+    "nameEn": "Medurat Hashevet",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "ראובן ארז"
+  },
+  {
+    "id": "310",
+    "nameHe": "מה שאני צריכה",
+    "nameEn": "Ma Shani Tzricha",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "יובל דיין"
+  },
+  {
+    "id": "311",
+    "nameHe": "מוכר הגרעינים",
+    "nameEn": "Mocher Ha'Garinim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "דקלון וסגיב כהן"
+  },
+  {
+    "id": "104",
+    "nameHe": "מורה לחיים",
+    "nameEn": "More Lechayim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1999",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "105",
+    "nameHe": "מחול יונתן",
+    "nameEn": "Machol Jonathan",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "אינסטרומנטלי"
+  },
+  {
+    "id": "106",
+    "nameHe": "מחול רחל",
+    "nameEn": "Machol Rachel",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1996",
+    "performer": "בועז שרעבי"
+  },
+  {
+    "id": "285",
+    "nameHe": "מחולות ניצנים",
+    "nameEn": "Mecholot Nitzanim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "ארתור גורביץ'"
+  },
+  {
+    "id": "107",
+    "nameHe": "מחוללה",
+    "nameEn": "Mecholelah",
+    "choreographer": "גדי ביטון וירון בן שמחון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "להקת אתניקה"
+  },
+  {
+    "id": "309",
+    "nameHe": "מחר",
+    "nameEn": "Machar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "חזי להב"
+  },
+  {
+    "id": "108",
+    "nameHe": "מי אוהב אותך יותר ממני",
+    "nameEn": "Mi Ohev Otach Yoter Mimeni",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2005",
+    "performer": "ארכדי דוכין"
+  },
+  {
+    "id": "314",
+    "nameHe": "מילות תודה",
+    "nameEn": "Milot Toda",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "יוני רועה"
+  },
+  {
+    "id": "109",
+    "nameHe": "מילים יפות מאלה",
+    "nameEn": "Milim Yafot Meele",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2005",
+    "performer": "הפרוייקט של עידן רייכל"
+  },
+  {
+    "id": "110",
+    "nameHe": "מילים לאהבה",
+    "nameEn": "Milim Laahava",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "ליאור נרקיס"
+  },
+  {
+    "id": "332",
+    "nameHe": "מישהו",
+    "nameEn": "Misheu",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2015",
+    "performer": "אריאל זילבר"
+  },
+  {
+    "id": "313",
+    "nameHe": "מישהו אוהב אותך",
+    "nameEn": "Mishehu Ohev Otach",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2014",
+    "performer": "גלי עטרי"
+  },
+  {
+    "id": "250",
+    "nameHe": "מכתוב",
+    "nameEn": "Maktub",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "308",
+    "nameHe": "מלאך שומר",
+    "nameEn": "Malach Shomer",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2014",
+    "performer": "אייל גולן"
+  },
+  {
+    "id": "111",
+    "nameHe": "מלדיטה לונה",
+    "nameEn": "Mmaldita Luna",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2003",
+    "performer": "שלומי שבת ופאבלו רוזנברג"
+  },
+  {
+    "id": "315",
+    "nameHe": "מלך בסוכה",
+    "nameEn": "Melech Basukka",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "112",
+    "nameHe": "מנעי קולך מבכי",
+    "nameEn": "Mini Kolech",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "הפרוייקט של עידן רייכל"
+  },
+  {
+    "id": "316",
+    "nameHe": "מסתובב",
+    "nameEn": "Mistovev",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "אביב גפן ומתי כספי"
+  },
+  {
+    "id": "198",
+    "nameHe": "מעבר לכתוב",
+    "nameEn": "Me'ever Lakatuv",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2010",
+    "performer": "מיכה ביטון"
+  },
+  {
+    "id": "337",
+    "nameHe": "מעגלים",
+    "nameEn": "Magalim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "עידן רייכל"
+  },
+  {
+    "id": "113",
+    "nameHe": "מקודשת",
+    "nameEn": "Mekudashet",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "שבטי ישראל"
+  },
+  {
+    "id": "242",
+    "nameHe": "משגעת לי ת'יום",
+    "nameEn": "Meshaga'at Li Ta'Yom",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "190",
+    "nameHe": "משיח",
+    "nameEn": "Mashiach",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1993",
+    "performer": "מרדכי בן דוד"
+  },
+  {
+    "id": "114",
+    "nameHe": "מתוקה",
+    "nameEn": "Metuka",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "251",
+    "nameHe": "מתי כבר נדבר",
+    "nameEn": "Matai Kvar Nedaber",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "אסי ישראלוף"
+  },
+  {
+    "id": "305",
+    "nameHe": "מתנות קטנות",
+    "nameEn": "Matanot Ktanot",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "רמי קלינשטיין"
+  },
+  {
+    "id": "323",
+    "nameHe": "מתקרב",
+    "nameEn": "Mitkarev",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2016",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "115",
+    "nameHe": "נדליק ביחד נר",
+    "nameEn": "Nadlik Beyachad Ner",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2002",
+    "performer": "שרית חדד"
+  },
+  {
+    "id": "188",
+    "nameHe": "נועדנו",
+    "nameEn": "Noaadnu",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2009",
+    "performer": "דין דין אביב וגלעד שגב"
+  },
+  {
+    "id": "116",
+    "nameHe": "נרקוד כולנו",
+    "nameEn": "Nirkod Kulanu",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1996",
+    "performer": "יפה ירקוני"
+  },
+  {
+    "id": "117",
+    "nameHe": "סוס מעץ",
+    "nameEn": "Sus Meetz",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1994",
+    "performer": "נורית גלרון"
+  },
+  {
+    "id": "195",
+    "nameHe": "סוף",
+    "nameEn": "Sof",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2010",
+    "performer": "הראל סקעת"
+  },
+  {
+    "id": "118",
+    "nameHe": "סוף העולם",
+    "nameEn": "Sof Haolam",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "נינט טייב"
+  },
+  {
+    "id": "119",
+    "nameHe": "סימנים",
+    "nameEn": "Simanim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2006",
+    "performer": "הראל מויאל"
+  },
+  {
+    "id": "120",
+    "nameHe": "סיפור בדוי",
+    "nameEn": "Sipur Baduy",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "121",
+    "nameHe": "סלאמתי",
+    "nameEn": "Salamati",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2006",
+    "performer": "אראש"
+  },
+  {
+    "id": "122",
+    "nameHe": "סליבבי",
+    "nameEn": "Selibabi",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "1999",
+    "performer": "נומאדס"
+  },
+  {
+    "id": "345",
+    "nameHe": "סלסולים",
+    "nameEn": "Silsulim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2016",
+    "performer": "סטטיק ובן-אל תבורי"
+  },
+  {
+    "id": "196",
+    "nameHe": "סממן",
+    "nameEn": "Sememen",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2010",
+    "performer": "כברה קסאי"
+  },
+  {
+    "id": "123",
+    "nameHe": "סערה",
+    "nameEn": "Se'ara",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1997",
+    "performer": "אינסטרומנטלי"
+  },
+  {
+    "id": "124",
+    "nameHe": "סרט הודי",
+    "nameEn": "Seret Hodi",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2008",
+    "performer": "דנה אינטרנשיונל ועידן יניב"
+  },
+  {
+    "id": "125",
+    "nameHe": "סתיו",
+    "nameEn": "Stav",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2007",
+    "performer": "להקת מוטו"
+  },
+  {
+    "id": "126",
+    "nameHe": "עד החתונה",
+    "nameEn": "Ad Hachatuna",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "רון שובל"
+  },
+  {
+    "id": "127",
+    "nameHe": "עד סוף העולם",
+    "nameEn": "Ad Sof Haolam",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2003",
+    "performer": "חיים משה ויואב יצחק"
+  },
+  {
+    "id": "197",
+    "nameHe": "עוד יבואו",
+    "nameEn": "Od Yavou",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "אביהו מדינה"
+  },
+  {
+    "id": "245",
+    "nameHe": "עולם",
+    "nameEn": "Olam",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "221",
+    "nameHe": "עומד בשער",
+    "nameEn": "Omed Ba'sha'ar",
+    "choreographer": "גדי ביטון ואוהד אטיה",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "128",
+    "nameHe": "עורי עור",
+    "nameEn": "Uri Ur",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "אביב גפן"
+  },
+  {
+    "id": "338",
+    "nameHe": "עינב",
+    "nameEn": "Einav",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2016",
+    "performer": "ג'יין בורדו"
+  },
+  {
+    "id": "129",
+    "nameHe": "עיניים",
+    "nameEn": "Einaim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2008",
+    "performer": "חיים משה"
+  },
+  {
+    "id": "312",
+    "nameHe": "עכשיו קרוב",
+    "nameEn": "Achsaiv Karov",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2017",
+    "performer": "הפרוייקט של עידן רייכל"
+  },
+  {
+    "id": "130",
+    "nameHe": "עלם ועלמה",
+    "nameEn": "Elam Ve Alma",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1999",
+    "performer": "עופרי סאלם"
+  },
+  {
+    "id": "268",
+    "nameHe": "עם אחד",
+    "nameEn": "Am Echad",
+    "choreographer": "גדי ביטון וערן ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "מוש בן ארי"
+  },
+  {
+    "id": "253",
+    "nameHe": "עפריטה",
+    "nameEn": "Afrita",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2014",
+    "performer": "נדב קקון"
+  },
+  {
+    "id": "131",
+    "nameHe": "עקידה",
+    "nameEn": "Akida",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1999",
+    "performer": "שבע"
+  },
+  {
+    "id": "288",
+    "nameHe": "עשרים וארבע שעות",
+    "nameEn": "Esrim Ve'Arba Sha'ot",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "132",
+    "nameHe": "פג'ו 92",
+    "nameEn": "Peugeot 92",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "קרן פלס"
+  },
+  {
+    "id": "133",
+    "nameHe": "פורשת כנפיים",
+    "nameEn": "Poreset Knafayim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "נמרוד לב ואורלי פרל"
+  },
+  {
+    "id": "134",
+    "nameHe": "פיוט",
+    "nameEn": "Piyut",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "אינסטרומנטלי"
+  },
+  {
+    "id": "306",
+    "nameHe": "פרח במדבר",
+    "nameEn": "Pehrach Bamidbar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2014",
+    "performer": "דקלון וסגיב כהן"
+  },
+  {
+    "id": "135",
+    "nameHe": "פרח מן הגן",
+    "nameEn": "Perach Min Ha’Gan",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "ינון וחגית קליש"
+  },
+  {
+    "id": "136",
+    "nameHe": "פרח שלי",
+    "nameEn": "Perach Sheli",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "137",
+    "nameHe": "פרפרים",
+    "nameEn": "Parparim",
+    "choreographer": "גדי ביטון ואיציק סעדה",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "אורי בנאי"
+  },
+  {
+    "id": "336",
+    "nameHe": "פתאום",
+    "nameEn": "Pitom",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "מוש בן ארי"
+  },
+  {
+    "id": "138",
+    "nameHe": "פתאום אביב",
+    "nameEn": "Pitom Aviv",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1994",
+    "performer": "אחים ואחיות"
+  },
+  {
+    "id": "208",
+    "nameHe": "פתגם סיני",
+    "nameEn": "Pitgam Sini",
+    "choreographer": "גדי ביטון ואוהד אטיה",
+    "form": "שורות",
+    "year": "2011",
+    "performer": "אתי ביטון"
+  },
+  {
+    "id": "325",
+    "nameHe": "פתח ליבך",
+    "nameEn": "Ptach Libcha",
+    "choreographer": "גדי ביטון ונורית מלמד",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "דוד ד'אור ואמנים שונים"
+  },
+  {
+    "id": "289",
+    "nameHe": "צוותא",
+    "nameEn": "Tzavta",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "139",
+    "nameHe": "צימאון",
+    "nameEn": "Tzima'on",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "140",
+    "nameHe": "צליל רועים",
+    "nameEn": "Tzlil Royim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1995",
+    "performer": "בועז שרעבי"
+  },
+  {
+    "id": "141",
+    "nameHe": "צלצולי פעמונים",
+    "nameEn": "Tziltzuley Paamonim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2007",
+    "performer": "יואב יצחק"
+  },
+  {
+    "id": "239",
+    "nameHe": "קאדה דיה",
+    "nameEn": "Cada Dia",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2013",
+    "performer": "מרתה גומז"
+  },
+  {
+    "id": "214",
+    "nameHe": "קאזה דה לונה",
+    "nameEn": "Cassa De Luna",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "אתניקס"
+  },
+  {
+    "id": "231",
+    "nameHe": "קולות הלב",
+    "nameEn": "Kolot Ha'lev",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2012",
+    "performer": "גלעד שגב ומירי מסיקה"
+  },
+  {
+    "id": "211",
+    "nameHe": "קורא לך",
+    "nameEn": "Kore Lach",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "דור דניאל"
+  },
+  {
+    "id": "142",
+    "nameHe": "קזבלנקה",
+    "nameEn": "Cassablanca",
+    "choreographer": "גדי ביטון ואבי לוי",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "ארתור גורביץ'"
+  },
+  {
+    "id": "143",
+    "nameHe": "קחי אותי",
+    "nameEn": "Kchi Otti",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2008",
+    "performer": "מוש בן ארי"
+  },
+  {
+    "id": "144",
+    "nameHe": "קפה אצל ברטה",
+    "nameEn": "Cafe Etzel Berta",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1992",
+    "performer": "יגאל בשן"
+  },
+  {
+    "id": "346",
+    "nameHe": "קרן אור",
+    "nameEn": "Keren Or",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2016",
+    "performer": "גלי עטרי"
+  },
+  {
+    "id": "145",
+    "nameHe": "ראיתי בעינייך",
+    "nameEn": "Raiti Beenaich",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2002",
+    "performer": "שלומי שבת וסימה עמר"
+  },
+  {
+    "id": "147",
+    "nameHe": "רגע",
+    "nameEn": "Rega",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1998",
+    "performer": "פרה קדושה"
+  },
+  {
+    "id": "290",
+    "nameHe": "רדיו רמאללה",
+    "nameEn": "Radio Ramalla",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2003",
+    "performer": "יהודה פוליקר"
+  },
+  {
+    "id": "292",
+    "nameHe": "רואים רחוק רואים שקוף",
+    "nameEn": "Ro'im Rachok Ro'im Shakuf",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "מאיר בנאי"
+  },
+  {
+    "id": "254",
+    "nameHe": "רוצי קטנה",
+    "nameEn": "Rutzi Ktana",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "רמי קלינשטיין"
+  },
+  {
+    "id": "146",
+    "nameHe": "רוקדים ושרים",
+    "nameEn": "Rrokdim Vesharim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2000",
+    "performer": "גאיה"
+  },
+  {
+    "id": "148",
+    "nameHe": "רחוק רחוק",
+    "nameEn": "Rachok Rachok",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1997",
+    "performer": "גליקריה"
+  },
+  {
+    "id": "255",
+    "nameHe": "ריקוד המכונה",
+    "nameEn": "Rikud Ha'Mechona",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "משינה"
+  },
+  {
+    "id": "341",
+    "nameHe": "ריקוד הנעורים",
+    "nameEn": "Rikud HaNeurim",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2016",
+    "performer": "נדב קקון"
+  },
+  {
+    "id": "174",
+    "nameHe": "ריקוד השבטים",
+    "nameEn": "Rikud Hashvatim",
+    "choreographer": "גדי ביטון ואוהד אטיה",
+    "form": "שורות",
+    "year": "2009",
+    "performer": "שי חדד 360"
+  },
+  {
+    "id": "330",
+    "nameHe": "ריקוד חדש",
+    "nameEn": "",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "אילנית"
+  },
+  {
+    "id": "321",
+    "nameHe": "רפסודה",
+    "nameEn": "Rafsoda",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2015",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "149",
+    "nameHe": "רק את",
+    "nameEn": "Rak At",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1999",
+    "performer": "עמיר בניון"
+  },
+  {
+    "id": "352",
+    "nameHe": "שאריות של החיים",
+    "nameEn": "She'eriyot Shel HaChaim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2017",
+    "performer": "הפרוייקט של עידן רייכל"
+  },
+  {
+    "id": "293",
+    "nameHe": "שבק מיוזיק",
+    "nameEn": "Shabak Music",
+    "choreographer": "גדי ביטון",
+    "form": "שורות",
+    "year": "2005",
+    "performer": "מוקי"
+  },
+  {
+    "id": "294",
+    "nameHe": "שדות של אירוסים",
+    "nameEn": "Sadot Shel Irusim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "שלמה ארצי"
+  },
+  {
+    "id": "257",
+    "nameHe": "שדרות האהבה",
+    "nameEn": "Sderot Ha'Ahava",
+    "choreographer": "גדי ביטון ומשה טווילי",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "דורון מזר"
+  },
+  {
+    "id": "151",
+    "nameHe": "שיעלה האור",
+    "nameEn": "Sheya'ale Ha'Or",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "1998",
+    "performer": "עופרי סאלם"
+  },
+  {
+    "id": "235",
+    "nameHe": "שיר המים",
+    "nameEn": "Shir Hamaim",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "ברי סחרוף ורע מוכיח"
+  },
+  {
+    "id": "186",
+    "nameHe": "שיר השירים שלי",
+    "nameEn": "Shir Hashirim Sheli",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "התקווה 6"
+  },
+  {
+    "id": "150",
+    "nameHe": "שיר ותהילה",
+    "nameEn": "Sir Utehila",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "דקלון"
+  },
+  {
+    "id": "152",
+    "nameHe": "שיר כלולות",
+    "nameEn": "Shir Klulot",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1997",
+    "performer": "ששי קשת"
+  },
+  {
+    "id": "223",
+    "nameHe": "שיר לאסף",
+    "nameEn": "Shir La'Asaf",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "קרן פלס"
+  },
+  {
+    "id": "153",
+    "nameHe": "שלום ואהבה",
+    "nameEn": "Salom Vahava",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "גאיה"
+  },
+  {
+    "id": "154",
+    "nameHe": "שלוש בלילה",
+    "nameEn": "Shalosh Ba'Layla",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "טיפקס"
+  },
+  {
+    "id": "155",
+    "nameHe": "שמעונה",
+    "nameEn": "Simuna",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "להקת שמעונה"
+  },
+  {
+    "id": "219",
+    "nameHe": "שמרי נפשך",
+    "nameEn": "Shimri Nafshech",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2011",
+    "performer": "מיכה ביטון וחני דינור"
+  },
+  {
+    "id": "156",
+    "nameHe": "שני קולות",
+    "nameEn": "Shney Kolot",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "1994",
+    "performer": "בועז שרעבי ושושנה דמארי"
+  },
+  {
+    "id": "259",
+    "nameHe": "שנינו מאותו הכפר",
+    "nameEn": "Shnenu Me'Oto Ha'Kfar",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2012",
+    "performer": "דודו אהרון"
+  },
+  {
+    "id": "194",
+    "nameHe": "תגידו לה",
+    "nameEn": "Tagidu La",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2010",
+    "performer": "דודו אהרון"
+  },
+  {
+    "id": "157",
+    "nameHe": "תגידי לו",
+    "nameEn": "Tagidi Lo",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2005",
+    "performer": "אוהד חיטמן"
+  },
+  {
+    "id": "260",
+    "nameHe": "תגלי לי למה",
+    "nameEn": "Tegali Li Lama",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2013",
+    "performer": "שלומי שבת"
+  },
+  {
+    "id": "158",
+    "nameHe": "תהילה",
+    "nameEn": "Tehila",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2004",
+    "performer": "יהורם גאון"
+  },
+  {
+    "id": "159",
+    "nameHe": "תוף וכינור",
+    "nameEn": "Tof Ve'Kinor",
+    "choreographer": "גדי ביטון ואבי לוי",
+    "form": "מעגלים",
+    "year": "1997",
+    "performer": "להקת שפתיים"
+  },
+  {
+    "id": "327",
+    "nameHe": "תל אביב",
+    "nameEn": "Tel Aviv",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2015",
+    "performer": "אוראל גיספן"
+  },
+  {
+    "id": "205",
+    "nameHe": "תמונה שבורה",
+    "nameEn": "Tmuna Shvura",
+    "choreographer": "גדי ביטון ואילן בנדיקט",
+    "form": "זוגות",
+    "year": "2011",
+    "performer": "אייל גולן"
+  },
+  {
+    "id": "295",
+    "nameHe": "תן לי את הלילה",
+    "nameEn": "Ten Li Et Ha'Layla",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2005",
+    "performer": "זהבה בן"
+  },
+  {
+    "id": "160",
+    "nameHe": "תן לי בדרבוקה",
+    "nameEn": "Ten Li Badarbuka",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "חמסה"
+  },
+  {
+    "id": "161",
+    "nameHe": "תני לי אוויר",
+    "nameEn": "Tni Li Avir",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2004",
+    "performer": "סגיב כהן"
+  },
+  {
+    "id": "162",
+    "nameHe": "תני לי מגע",
+    "nameEn": "Tni Li Maga",
+    "choreographer": "גדי ביטון",
+    "form": "זוגות",
+    "year": "2001",
+    "performer": "אורי בנאי"
+  },
+  {
+    "id": "175",
+    "nameHe": "תפילת אב",
+    "nameEn": "Tfilat Av",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2009",
+    "performer": "יוסי אזולאי"
+  },
+  {
+    "id": "163",
+    "nameHe": "תרקדי",
+    "nameEn": "Tirkedi",
+    "choreographer": "גדי ביטון",
+    "form": "מעגלים",
+    "year": "2001",
+    "performer": "אביב דינדין"
+  }
+]

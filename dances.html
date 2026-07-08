@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>הריקודים שלי | קטלוג ריקודי עם — גדי ביטון</title>
+<meta name="description" content="קטלוג מלא של למעלה מ־340 ריקודי עם שחיבר גדי ביטון — חפשו לפי שם, שנה, סגנון ומבצע.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <strong>גדי ביטון</strong>
+      <span>מחול ישראלי</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">בית</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="production.html">ארגון והפקה</a></li>
+        <li><a href="dances.html" class="active">הריקודים שלי</a></li>
+        <li><a href="classes.html">חוגים</a></li>
+        <li><a href="gallery.html">גלריה</a></li>
+        <li><a href="media.html">תקשורת</a></li>
+        <li><a href="contact.html">צור קשר</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="תפריט"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">בית</a> / הריקודים שלי</div>
+    <span class="eyebrow">קטלוג ריקודים</span>
+    <h1>ריקודי עם שלי</h1>
+    <p>למעלה מ־340 ריקודים מקוריים שחיבר גדי ביטון לאורך השנים. חפשו לפי שם, שנה או מבצע, וסננו לפי סגנון הריקוד.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="dances-toolbar">
+      <input type="search" id="danceSearch" placeholder="חיפוש לפי שם ריקוד, מבצע או שנה…" aria-label="חיפוש ריקודים">
+      <select id="formFilter" aria-label="סינון לפי צורת ריקוד">
+        <option value="">כל הצורות</option>
+        <option value="זוגות">זוגות</option>
+        <option value="מעגלים">מעגלים</option>
+      </select>
+      <span class="dances-count">טוען נתונים…</span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="dances">
+        <thead>
+          <tr>
+            <th data-key="nameHe">שם ריקוד <span class="arrow">▲</span></th>
+            <th data-key="nameEn">Dance Name <span class="arrow"></span></th>
+            <th data-key="form">צורת הריקוד <span class="arrow"></span></th>
+            <th data-key="year">שנת חיבור <span class="arrow"></span></th>
+            <th data-key="performer">מבצע השיר <span class="arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="no-results" style="display:none;">לא נמצאו ריקודים התואמים את החיפוש.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>גדי ביטון — מחול ישראלי</h4>
+        <p style="font-size:0.9rem;line-height:1.7;">מרקיד, כוריאוגרף ומפיק אירועי מחול. מקדם את תחום ריקודי העם הישראליים בארץ ובעולם כבר יותר משלושה עשורים.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/Machol.Israeli.Gadi.Bitton/" target="_blank" rel="noopener" aria-label="פייסבוק">f</a>
+          <a href="https://www.instagram.com/gadi_bitton/" target="_blank" rel="noopener" aria-label="אינסטגרם">ig</a>
+          <a href="https://www.youtube.com/user/gadibittondances" target="_blank" rel="noopener" aria-label="יוטיוב">yt</a>
+        </div>
+      </div>
+      <div>
+        <h4>ניווט</h4>
+        <a href="about.html">אודות</a>
+        <a href="dances.html">הריקודים שלי</a>
+        <a href="classes.html">חוגים</a>
+        <a href="gallery.html">גלריה</a>
+        <a href="media.html">תקשורת</a>
+      </div>
+      <div>
+        <h4>יצירת קשר</h4>
+        <a href="tel:0035328993">03-5328993</a>
+        <a href="mailto:info@gadibitton.co.il">info@gadibitton.co.il</a>
+        <a href="contact.html">טופס יצירת קשר</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© גדי ביטון — מחול ישראלי. כל הזכויות שמורות.</span>
+      <span>עוצב מחדש 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/dances.js"></script>
+</body>
+</html>
