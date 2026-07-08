@@ -492,6 +492,7 @@ table.dances td {
 }
 
 table.dances tr:nth-child(even) td { background: var(--cream); }
+table.dances tbody tr { cursor: pointer; }
 table.dances tr:hover td { background: #f6ecd8; }
 table.dances td.name { color: var(--plum); font-weight: 700; }
 table.dances td.form-tag {
@@ -578,6 +579,109 @@ table.dances td.form-tag {
   background: rgba(255,255,255,0.12);
 }
 .lightbox .close:hover { background: rgba(255,255,255,0.25); }
+
+/* ---------- Dance detail modal ---------- */
+.dance-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(26,15,48,0.85);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1000;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+.dance-modal-overlay.open { display: flex; }
+
+.dance-modal {
+  background: var(--cream);
+  border-radius: var(--radius);
+  max-width: 760px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.dance-modal .close {
+  position: absolute; top: 16px; left: 16px;
+  color: #fff; font-size: 1.6rem; cursor: pointer;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.35);
+  z-index: 2;
+}
+.dance-modal .close:hover { background: rgba(0,0,0,0.55); }
+
+.dance-modal-header {
+  background: linear-gradient(120deg, var(--plum-deep), var(--plum));
+  color: #fff;
+  padding: 30px 28px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.dance-modal-header img {
+  width: 90px; height: 90px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+.dance-modal-header .no-photo {
+  width: 90px; height: 90px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+.dance-modal-header h3 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 900; }
+.dance-modal-header .en-name { color: var(--gold); font-size: 0.95rem; margin: 0; }
+
+.dance-modal-body { padding: 24px 28px 30px; }
+
+.dance-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.dance-meta-grid .item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+.dance-meta-grid .item .k { font-size: 0.76rem; color: var(--ink-soft); display: block; margin-bottom: 2px; }
+.dance-meta-grid .item .v { font-weight: 700; color: var(--plum); }
+
+.dance-section { margin-bottom: 26px; }
+.dance-section:last-child { margin-bottom: 0; }
+.dance-section h4 {
+  margin: 0 0 12px;
+  color: var(--plum);
+  font-size: 1rem;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.dance-videos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.video-embed { border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #000; aspect-ratio: 16/9; }
+.video-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+.video-embed-label { font-size: 0.8rem; color: var(--ink-soft); margin-top: 6px; text-align: center; }
+
+.dance-lyrics {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  white-space: pre-line;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  max-height: 260px;
+  overflow-y: auto;
+}
 
 /* ---------- Media (press/tv) ---------- */
 .media-list { display: flex; flex-direction: column; gap: 16px; }
@@ -690,6 +794,9 @@ form.contact-form button { align-self: flex-start; border: none; cursor: pointer
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .media-item { grid-template-columns: 46px 1fr; }
   .media-icon { width: 46px; height: 46px; font-size: 1.2rem; }
+  .dance-videos { grid-template-columns: 1fr; }
+  .dance-modal-header { flex-direction: column; text-align: center; }
+  .dance-modal-overlay { padding: 16px; }
   .cta-band { margin: 0 16px; padding: 40px 24px; }
   section.section { padding: 56px 0; }
   .dances-toolbar { flex-direction: column; align-items: stretch; }
