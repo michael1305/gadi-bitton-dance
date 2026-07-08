@@ -70,6 +70,12 @@ ul { margin: 0; padding: 0; list-style: none; }
   width: auto;
 }
 
+.logo-icon-mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
 .logo-tagline {
   font-size: 0.72rem;
   color: var(--gold-deep);
@@ -344,6 +350,8 @@ section.section.alt { background: var(--cream-deep); }
 }
 
 .footer-grid h4 { color: #fff; font-size: 1rem; margin: 0 0 16px; }
+.footer-brand { display: flex; align-items: center; gap: 10px; }
+.footer-brand img { width: 30px; height: 30px; flex-shrink: 0; }
 .footer-grid a { color: #cfc3e6; display: block; padding: 5px 0; font-size: 0.93rem; transition: color 0.2s; }
 .footer-grid a:hover { color: var(--gold); }
 
@@ -633,9 +641,9 @@ table.dances td.form-tag {
   border-radius: 14px;
   background: rgba(255,255,255,0.1);
   display: flex; align-items: center; justify-content: center;
-  font-size: 2rem;
   flex-shrink: 0;
 }
+.dance-modal-header .no-photo img { width: 56px; height: 56px; }
 .dance-modal-header h3 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 900; }
 .dance-modal-header .en-name { color: var(--gold); font-size: 0.95rem; margin: 0; }
 
@@ -797,6 +805,8 @@ form.contact-form button { align-self: flex-start; border: none; cursor: pointer
   .dance-videos { grid-template-columns: 1fr; }
   .dance-modal-header { flex-direction: column; text-align: center; }
   .dance-modal-overlay { padding: 16px; }
+  .logo-full { display: none; }
+  .logo-icon-mobile { display: block; }
   .cta-band { margin: 0 16px; padding: 40px 24px; }
   section.section { padding: 56px 0; }
   .dances-toolbar { flex-direction: column; align-items: stretch; }
