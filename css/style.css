@@ -801,10 +801,28 @@ form.contact-form button { align-self: flex-start; border: none; cursor: pointer
 }
 
 @media (max-width: 720px) {
-  .main-nav { position: fixed; inset: 82px 0 0 0; background: var(--cream); padding: 20px 28px; transform: translateX(100%); transition: transform 0.3s ease; overflow-y: auto; }
-  .main-nav.open { transform: translateX(0); }
-  .main-nav ul { flex-direction: column; gap: 4px; }
-  .main-nav a { padding: 14px 18px; font-size: 1.05rem; }
+  .main-nav {
+    position: fixed;
+    top: 82px;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 82px);
+    background: var(--cream);
+    padding: 10px 20px 22px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 24px 40px -16px rgba(26, 15, 48, 0.3);
+    overflow-y: auto;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.22s ease, opacity 0.22s ease, visibility 0.22s;
+  }
+  .main-nav.open { transform: translateY(0); opacity: 1; visibility: visible; }
+  .main-nav ul { flex-direction: column; gap: 2px; }
+  .main-nav a { padding: 14px 18px; font-size: 1.05rem; border-radius: 12px; }
+  .main-nav li + li { border-top: 1px solid var(--line); }
+  .main-nav li:last-child { border-top: none; }
+  .main-nav a.lang-switch { margin-top: 10px; text-align: center; }
   .nav-toggle { display: block; }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
