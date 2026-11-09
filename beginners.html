@@ -36,18 +36,18 @@
 
   /* Hero */
   .hero {
-    position: relative; color: #fff;
+    position: relative; color: #fff; overflow: hidden;
     background: linear-gradient(160deg, var(--plum) 0%, var(--plum-deep) 100%);
-    padding: 16px 0 88px;
+    padding: 28px 0 88px;
   }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--hero-img) center/cover no-repeat;
+    opacity: .22; transition: background-image .3s;
+  }
+  .hero .wrap { position: relative; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; opacity: .95; }
   .brand img { width: 40px; height: 40px; border-radius: 50%; background: #fff; }
-  .hero-photo {
-    margin-top: 14px; border-radius: var(--radius); overflow: hidden;
-    aspect-ratio: 16 / 9; background: var(--plum-deep);
-    box-shadow: 0 14px 30px -18px rgba(0,0,0,.7);
-  }
-  .hero-photo img { width: 100%; height: 100%; object-fit: cover; transition: opacity .25s; }
   h1 {
     font-size: clamp(2.3rem, 10vw, 3.3rem); line-height: 1.05;
     margin: 20px 0 10px; font-weight: 900; letter-spacing: -.5px;
@@ -150,7 +150,6 @@
       <img src="images/site/icon.png" alt="">
       גדי ביטון · מחול ישראלי
     </div>
-    <div class="hero-photo"><img id="hero-img" src="images/site/class-sunday-raanana.jpg" alt="רוקדים במעגל בחוג של גדי ביטון"></div>
     <h1><span class="l1">ריקודי עם 🕺💃</span><span class="l2">מהצעד הראשון</span></h1>
     <span class="tag">חוג חדש למתחילים</span>
     <p class="lead">שמחים על התעניינותך! בחרו את הקבוצה שהכי נוחה לכם — וניפגש במעגל.</p>
@@ -248,7 +247,7 @@
       price: '40 ₪ למפגש',
       waze: 'https://waze.com/ul?q=' + encodeURIComponent('לב הפארק רעננה') + '&navigate=yes',
       whatsapp: 'https://chat.whatsapp.com/IefeSq7Fv2jA0nJXpXyS4p',
-      img: 'images/site/class-sunday-raanana.jpg'
+      img: 'images/site/class-sunday-raanana-tall.jpg'
     }
   };
 
@@ -280,7 +279,7 @@
     current = key;
     document.querySelectorAll('.picker button').forEach(b =>
       b.setAttribute('aria-selected', String(b.dataset.g === key)));
-    $('hero-img').src = g.img;
+    $('hero').style.setProperty('--hero-img', `url('${g.img}')`);
 
     $('f-when').textContent = `כל יום ${g.day} בשעה ${g.time}`;
     const startDate = new Date(g.start + 'T00:00');
