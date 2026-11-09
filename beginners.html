@@ -36,25 +36,39 @@
 
   /* Hero */
   .hero {
-    position: relative; color: #fff; overflow: hidden;
+    position: relative; color: #fff;
     background: linear-gradient(160deg, var(--plum) 0%, var(--plum-deep) 100%);
-    padding: 28px 0 88px;
+    padding: 16px 0 88px;
   }
-  .hero::before {
-    content: ""; position: absolute; inset: 0;
-    background: var(--hero-img) center/cover no-repeat;
-    opacity: .22; transition: background-image .3s;
-  }
-  .hero .wrap { position: relative; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; opacity: .95; }
   .brand img { width: 40px; height: 40px; border-radius: 50%; background: #fff; }
-  .eyebrow {
-    display: inline-block; margin-top: 26px; padding: 4px 12px; border-radius: 99px;
-    background: rgba(226,165,60,.18); color: var(--gold); font-weight: 700; font-size: .9rem;
+  .hero-photo {
+    margin-top: 14px; border-radius: var(--radius); overflow: hidden;
+    aspect-ratio: 16 / 9; background: var(--plum-deep);
+    box-shadow: 0 14px 30px -18px rgba(0,0,0,.7);
   }
-  h1 { font-size: clamp(2rem, 8vw, 2.9rem); line-height: 1.1; margin: 12px 0 10px; font-weight: 900; }
-  h1 span { color: var(--gold); }
-  .lead { font-size: 1.08rem; margin: 0; opacity: .92; max-width: 34ch; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; transition: opacity .25s; }
+  h1 {
+    font-size: clamp(2.3rem, 10vw, 3.3rem); line-height: 1.05;
+    margin: 20px 0 10px; font-weight: 900; letter-spacing: -.5px;
+  }
+  h1 .l1 { display: block; }
+  h1 .l2 { display: block; color: var(--gold); }
+  .tag {
+    display: inline-block; padding: 4px 12px; border-radius: 99px;
+    background: var(--rose); color: #fff; font-weight: 700; font-size: .9rem;
+  }
+  .lead { font-size: 1.08rem; margin: 10px 0 0; opacity: .92; max-width: 34ch; }
+
+  /* Instructor */
+  .instructor { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: center; }
+  .instructor img {
+    width: 110px; height: 140px; object-fit: cover; object-position: top;
+    border-radius: 14px; background: var(--cream-deep);
+  }
+  .instructor h2 { margin-bottom: 4px; }
+  .instructor .role { color: var(--rose); font-weight: 700; font-size: .95rem; margin: 0 0 6px; }
+  .instructor p { margin: 0; font-size: .97rem; }
 
   /* Group picker */
   .picker {
@@ -136,8 +150,9 @@
       <img src="images/site/icon.png" alt="">
       גדי ביטון · מחול ישראלי
     </div>
-    <span class="eyebrow">חוג ריקודי עם למתחילים</span>
-    <h1>מהצעד <span>הראשון</span> 🕺💃</h1>
+    <div class="hero-photo"><img id="hero-img" src="images/site/class-sunday-raanana.jpg" alt="רוקדים במעגל בחוג של גדי ביטון"></div>
+    <h1><span class="l1">ריקודי עם 🕺💃</span><span class="l2">מהצעד הראשון</span></h1>
+    <span class="tag">חוג חדש למתחילים</span>
     <p class="lead">שמחים על התעניינותך! בחרו את הקבוצה שהכי נוחה לכם — וניפגש במעגל.</p>
   </div>
 </header>
@@ -181,6 +196,15 @@
     <p>חוג המתחילים מהצעד הראשון מיועד למי שרוצה להתחיל לרקוד, וגם למי שרקד בעבר ורוצה לחזור.</p>
     <p>ממפגש למפגש תלמדו מגוון רחב של ריקודי עם, בלימוד יסודי וחווייתי.</p>
     <p>⭐ הנאה תרבותית משולבת עם מוזיקה ישראלית משובחת!</p>
+  </section>
+
+  <section class="card instructor" aria-labelledby="gadi-h">
+    <img src="images/site/gadi-portrait.jpg" alt="גדי ביטון">
+    <div>
+      <h2 id="gadi-h">גדי ביטון</h2>
+      <p class="role">מרקיד, כוריאוגרף ומפיק אירועי מחול</p>
+      <p>יוצר של מאות ריקודי עם, שמלמד מתחילים צעד אחרי צעד, בסבלנות ובהמון שמחה.</p>
+    </div>
   </section>
 
   <section class="card" aria-labelledby="perks-h">
@@ -256,7 +280,7 @@
     current = key;
     document.querySelectorAll('.picker button').forEach(b =>
       b.setAttribute('aria-selected', String(b.dataset.g === key)));
-    $('hero').style.setProperty('--hero-img', `url('${g.img}')`);
+    $('hero-img').src = g.img;
 
     $('f-when').textContent = `כל יום ${g.day} בשעה ${g.time}`;
     const startDate = new Date(g.start + 'T00:00');
