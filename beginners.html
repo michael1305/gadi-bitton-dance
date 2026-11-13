@@ -74,7 +74,7 @@
   .picker {
     position: relative; margin-top: -60px;
     background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
-    padding: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+    padding: 8px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;
   }
   .picker button {
     font: inherit; border: 0; cursor: pointer; border-radius: 13px;
@@ -161,6 +161,9 @@
     <button role="tab" id="tab-sun" data-g="sun" aria-selected="true">
       <strong>יום ראשון</strong><small>רעננה</small>
     </button>
+    <button role="tab" id="tab-tue" data-g="tue" aria-selected="false">
+      <strong>יום שלישי</strong><small>כפר המכביה</small>
+    </button>
     <button role="tab" id="tab-thu" data-g="thu" aria-selected="false">
       <strong>יום חמישי</strong><small>אוניברסיטת ת״א</small>
     </button>
@@ -228,6 +231,16 @@
 <script>
   // Group details. Times are local Israel time.
   const GROUPS = {
+    tue: {
+      day: 'שלישי', byday: 'TU',
+      start: '2026-11-17', time: '19:30', durationMin: 120,
+      where: 'מרכז הספורט, כפר המכביה',
+      parking: 'חניה חינם בחניון מרכז הספורט ובחניון המלון · יש להביא את פתק החניה לקופה',
+      price: '40 ₪ למפגש',
+      waze: 'https://waze.com/ul/hsv8y2e8ku',
+      whatsapp: 'https://chat.whatsapp.com/JaqRFRweupeDl6DxsIDOIM',
+      img: 'images/site/class-monday.jpg'
+    },
     thu: {
       day: 'חמישי', byday: 'TH',
       start: '2026-11-19', time: '20:00', durationMin: 120,
@@ -241,7 +254,7 @@
     sun: {
       day: 'ראשון', byday: 'SU',
       start: '2026-11-15', time: '20:00', durationMin: 120,
-      where: 'לב הפארק, רעננה',
+      where: 'לב הפארק, יאיר שטרן 3, רעננה',
       parking: 'חניה חינם',
       price: '40 ₪ למפגש',
       waze: 'https://waze.com/ul?ll=32.19350049,34.84822512&navigate=yes',
