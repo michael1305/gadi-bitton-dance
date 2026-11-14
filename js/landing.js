@@ -63,6 +63,7 @@
     $('brand-text').textContent = h.brand || '';
     $('h-l1').textContent = h.l1 || '';
     $('h-l2').textContent = h.l2 || '';
+    $('h-l1').parentElement.hidden = !h.l1 && !h.l2;
     $('h-tag').textContent = h.tag || '';
     $('h-tag').hidden = !h.tag;
     $('h-lead').textContent = h.lead || '';
