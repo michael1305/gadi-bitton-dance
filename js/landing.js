@@ -76,7 +76,7 @@
     const main = g.color.toLowerCase();
     const light = lum(main) > .3;
     return light
-      ? { main, deep: shade(main, .82), ink: '#141414', accent: '#5c2a00', logo: 'images/site/logo.png' }
+      ? { main, deep: shade(main, .82), ink: '#141414', accent: '#5c2a00', logo: 'images/site/logo-dark.png' }
       : { main, deep: shade(main, .55), ink: '#fff', accent: '', logo: '' };
   }
   function applyColor(c) {
