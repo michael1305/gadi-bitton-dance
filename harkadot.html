@@ -12,189 +12,36 @@
 <link rel="icon" type="image/png" href="images/site/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #211433; --ink-soft: #4a3d63;
-    --cream: #faf6ef; --cream-deep: #f1e9d8;
-    --plum: #2d1b4e; --plum-deep: #1a0f30;
-    --gold: #e2a53c; --gold-deep: #c6832a;
-    --rose: #c1436e; --wa: #1fa855;
-    --line: #e6ddc9; --card: #ffffff;
-    --shadow: 0 18px 40px -22px rgba(26,15,48,.45);
-    --radius: 18px;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; }
-  body {
-    font-family: 'Heebo', Arial, sans-serif;
-    background: var(--cream); color: var(--ink);
-    line-height: 1.65; -webkit-font-smoothing: antialiased;
-  }
-  a { color: inherit; text-decoration: none; }
-  img { max-width: 100%; display: block; }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
-
-  /* Hero */
-  .hero {
-    position: relative; color: #fff; overflow: hidden;
-    background: linear-gradient(160deg, var(--plum) 0%, var(--plum-deep) 100%);
-    padding: 28px 0 88px;
-  }
-  .hero::before {
-    content: ""; position: absolute; inset: 0;
-    background: var(--hero-img) center/cover no-repeat;
-    opacity: .22; transition: background-image .3s;
-  }
-  .hero .wrap { position: relative; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; opacity: .95; }
-  .brand img { width: 40px; height: 40px; border-radius: 50%; background: #fff; }
-  h1 {
-    font-size: clamp(2.3rem, 10vw, 3.3rem); line-height: 1.05;
-    margin: 20px 0 10px; font-weight: 900; letter-spacing: -.5px;
-  }
-  h1 .l1 { display: block; }
-  h1 .l2 { display: block; color: var(--gold); }
-  .tag {
-    display: inline-block; padding: 4px 12px; border-radius: 99px;
-    background: var(--rose); color: #fff; font-weight: 700; font-size: .9rem;
-  }
-  .lead { font-size: 1.08rem; margin: 10px 0 0; opacity: .92; max-width: 34ch; }
-
-  /* Group picker */
-  .picker {
-    position: relative; margin-top: -60px;
-    background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
-    padding: 8px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;
-  }
-  .picker button {
-    font: inherit; border: 0; cursor: pointer; border-radius: 13px;
-    padding: 12px 8px; background: transparent; color: var(--ink-soft);
-    display: flex; flex-direction: column; align-items: center; gap: 2px;
-    transition: background .2s, color .2s;
-  }
-  .picker button strong { font-size: 1.15rem; font-weight: 900; }
-  .picker button small { font-size: .85rem; }
-  .picker button[aria-selected="true"] { background: var(--plum); color: #fff; }
-  .picker button[aria-selected="true"] small { color: var(--gold); }
-  .picker button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-
-  /* Cards */
-  .card {
-    background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
-    padding: 20px; margin-top: 18px;
-  }
-  .card h2 { margin: 0 0 12px; font-size: 1.25rem; font-weight: 900; }
-  .facts { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
-  .facts li { display: grid; grid-template-columns: 38px 1fr; gap: 10px; align-items: start; }
-  .facts .ic {
-    width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
-    background: var(--cream-deep); font-size: 1.2rem;
-  }
-  .facts .k { font-size: .82rem; color: var(--ink-soft); }
-  .facts .v { font-weight: 700; font-size: 1.05rem; }
-  .facts .sub { font-size: .9rem; color: var(--ink-soft); font-weight: 400; }
-
-  /* Schedule */
-  .halls { display: grid; gap: 14px; }
-  .hall { border: 2px solid var(--line); border-radius: 14px; overflow: hidden; }
-  .hall-head { background: var(--plum); color: #fff; padding: 10px 14px; }
-  .hall-head h3 { margin: 0; font-size: 1.1rem; font-weight: 900; }
-  .hall-head p { margin: 0; font-size: .9rem; color: var(--gold); font-weight: 500; }
-  .slots { list-style: none; margin: 0; padding: 0; }
-  .slots li {
-    display: grid; grid-template-columns: 62px 1fr; gap: 10px; align-items: center;
-    padding: 9px 14px; border-top: 1px solid var(--line); font-size: 1rem;
-  }
-  .slots li:first-child { border-top: 0; }
-  .slots li:nth-child(even) { background: var(--cream); }
-  .slots time { font-weight: 900; color: var(--rose); font-variant-numeric: tabular-nums; direction: ltr; text-align: right; }
-  .slots .empty { color: var(--ink-soft); }
-  .team { margin: 0 0 12px; color: var(--ink-soft); font-size: .95rem; }
-
-  /* Actions */
-  .actions { display: grid; gap: 10px; margin-top: 18px; }
-  .btn {
-    display: flex; align-items: center; justify-content: center; gap: 10px;
-    min-height: 54px; padding: 12px 18px; border-radius: 14px;
-    font: inherit; font-weight: 700; font-size: 1.05rem; border: 0; cursor: pointer;
-  }
-  .btn-wa { background: var(--wa); color: #fff; }
-  .btn[hidden] { display: none; }
-  .wa-ic { width: 26px; height: 26px; flex: none; }
-  .btn-gold { background: var(--gold); color: var(--plum-deep); }
-  .btn-ghost { background: var(--card); color: var(--plum); border: 2px solid var(--line); }
-  .btn:active { transform: translateY(1px); }
-  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-
-  .cal-choices { display: none; gap: 10px; grid-template-columns: 1fr 1fr; }
-  .cal-choices.open { display: grid; }
-
-  /* Instructor */
-  .instructor { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: center; }
-  .instructor img {
-    width: 110px; height: 140px; object-fit: cover; object-position: top;
-    border-radius: 14px; background: var(--cream-deep);
-  }
-  .instructor p { margin: 0; font-size: .97rem; }
-
-  /* Perks */
-  .perks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0; padding: 0; list-style: none; }
-  .perks li {
-    background: var(--cream); border-radius: 14px; padding: 12px; font-size: .95rem;
-    display: flex; gap: 8px; align-items: flex-start;
-  }
-  .perks li span:first-child { font-size: 1.2rem; line-height: 1.3; }
-
-  footer {
-    text-align: center; padding: 30px 16px 40px; color: var(--ink-soft); font-size: .92rem;
-  }
-  footer strong { color: var(--ink); }
-
-  @media (max-width: 380px) {
-    .perks, .row { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="preconnect" href="https://firestore.googleapis.com">
+<link rel="stylesheet" href="css/landing.css?v=1">
 </head>
-<body>
+<body class="loading" data-page="harkadot">
 
 <header class="hero" id="hero">
   <div class="wrap">
     <div class="brand">
       <img src="images/site/icon.png" alt="">
-      גדי ביטון · מחול ישראלי
+      <span id="brand-text"></span>
     </div>
-    <h1><span class="l1">הרקדות 🕺💃</span><span class="l2">ריקודי עם</span></h1>
-    <span class="tag">שלוש פעמים בשבוע</span>
-    <p class="lead">בחרו את ההרקדה שלכם — ומחכים לכם במעגל!</p>
+    <h1><span class="l1" id="h-l1"></span><span class="l2" id="h-l2"></span></h1>
+    <span class="tag" id="h-tag"></span>
+    <p class="lead" id="h-lead"></p>
   </div>
 </header>
 
 <main class="wrap">
-  <div class="picker" role="tablist" aria-label="בחירת הרקדה">
-    <button role="tab" data-g="sun" aria-selected="true">
-      <strong>יום ראשון</strong><small>רעננה</small>
-    </button>
-    <button role="tab" data-g="tue" aria-selected="false">
-      <strong>יום שלישי</strong><small>כפר המכביה</small>
-    </button>
-    <button role="tab" data-g="thu" aria-selected="false">
-      <strong>יום חמישי</strong><small>אוניברסיטת ת״א</small>
-    </button>
-  </div>
+  <div class="picker" id="picker" role="tablist" aria-label="בחירת יום"></div>
 
   <section class="card" aria-labelledby="details-h">
-    <h2 id="details-h">פרטי ההרקדה</h2>
+    <h2 id="details-h"></h2>
     <ul class="facts">
-      <li><span class="ic">📅</span><div><div class="k">מתי</div><div class="v" id="f-when"></div><div class="sub">כל שבוע</div></div></li>
+      <li><span class="ic">📅</span><div><div class="k">מתי</div><div class="v" id="f-when"></div><div class="sub" id="f-start"></div></div></li>
       <li><span class="ic">📍</span><div><div class="k">איפה</div><div class="v" id="f-where"></div><div class="sub" id="f-parking"></div></div></li>
-      <li><span class="ic">💰</span><div><div class="k">כניסה</div><div class="v" id="f-price"></div><div class="sub">תשלום במקום באשראי או מזומן</div></div></li>
+      <li><span class="ic">💰</span><div><div class="k" id="price-k"></div><div class="v" id="f-price"></div><div class="sub" id="price-note"></div></div></li>
     </ul>
 
     <div class="actions">
-      <a class="btn btn-wa" id="a-wa" target="_blank" rel="noopener" hidden>
-        <svg class="wa-ic" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 0 1 5.3 16C5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
-        הצטרפות לקהילת ההרקדה בווטסאפ
-      </a>
+      <a class="btn btn-wa" id="a-wa" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 0 1 5.3 16C5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> <span id="join-text"></span></a>
       <div class="row">
         <a class="btn btn-gold" id="a-waze" target="_blank" rel="noopener">🚗 ניווט בוויז</a>
         <button class="btn btn-ghost" id="b-cal" type="button" aria-expanded="false">🗓️ הוספה ליומן</button>
@@ -206,196 +53,41 @@
     </div>
   </section>
 
-  <section class="card" aria-labelledby="sched-h">
-    <h2 id="sched-h">לוח זמנים</h2>
+  <section class="card" id="sched" aria-labelledby="sched-h" hidden>
+    <h2 id="sched-h"></h2>
     <p class="team" id="f-team"></p>
     <div class="halls" id="halls"></div>
   </section>
 
-  <section class="card instructor" aria-labelledby="gadi-h">
-    <img src="images/site/gadi-portrait.jpg" alt="גדי ביטון">
+  <section class="card about" id="about" aria-labelledby="about-h">
+    <h2 id="about-h"></h2>
+    <div id="about-body"></div>
+  </section>
+
+  <section class="card instructor" id="instructor" aria-labelledby="gadi-h">
+    <img id="gadi-img" alt="">
     <div>
-      <h2 id="gadi-h">גדי ביטון</h2>
-      <p>גדי ביטון הוא רקדן, מרקיד, כוריאוגרף, מנהל אמנותי ומפיק אירועי מחול.</p>
+      <h2 id="gadi-h"></h2>
+      <p id="gadi-bio"></p>
     </div>
   </section>
 
-  <section class="card" aria-labelledby="perks-h">
-    <h2 id="perks-h">טוב לדעת</h2>
-    <ul class="perks">
-      <li><span>📝</span><span>אין צורך ברישום מוקדם</span></li>
-      <li><span>☕</span><span>פינת קפה איכותית</span></li>
-      <li><span>👟</span><span>מומלץ להגיע בנעלי ספורט נוחות</span></li>
-      <li><span>🎶</span><span>מוזיקה ישראלית משובחת כל הערב</span></li>
-    </ul>
+  <section class="card" id="perks" aria-labelledby="perks-h">
+    <h2 id="perks-h"></h2>
+    <ul class="perks" id="perks-list"></ul>
   </section>
 
   <div class="actions">
-    <a class="btn btn-wa" id="a-ask" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 0 1 5.3 16C5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> שאלות? כתבו לנו בווטסאפ</a>
+    <a class="btn btn-wa" id="a-ask" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 0 1 5.3 16C5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> <span id="ask-text"></span></a>
   </div>
 </main>
 
 <footer>
-  מחכים לרקוד איתך יחד במעגל 🕺💃<br>
-  <strong>גדי ביטון וצוות מחול ישראלי</strong>
+  <span id="foot-1"></span><br>
+  <strong id="foot-2"></strong>
 </footer>
 
-<script>
-  // Weekly harkadot. Times are local Israel time; anchor = any past date on that weekday.
-  const GROUPS = {
-    sun: {
-      day: 'ראשון', byday: 'SU', anchor: '2026-11-01', time: '19:15', durationMin: 225,
-      where: 'אולם לב הפארק, יאיר שטרן 3, רעננה',
-      parking: 'חניה בשפע',
-      price: '40 ₪',
-      waze: 'https://waze.com/ul?ll=32.19350049,34.84822512&navigate=yes',
-      whatsapp: 'https://chat.whatsapp.com/BCYU5z8vwCcL4H38ai8HNM',
-      img: 'images/site/class-sunday-raanana-tall.jpg',
-      team: 'גדי ביטון · ורדית חדד · הילה בר · גלית שם טוב',
-      halls: [
-        { name: 'אולם מרכזי', slots: [
-          ['19:15', 'סדנת מעגלים'], ['20:15', 'סדנת זוגות'], ['21:00', 'מעגלים'],
-          ['21:30', 'זוגות'], ['22:00', 'מעגלים'], ['22:30', 'זוגות']] },
-        { name: 'סטודיו גב אל גב', slots: [
-          ['19:15', ''], ['20:15', 'מעגלים גב אל גב'], ['21:00', 'זוגות גב אל גב'],
-          ['21:30', 'מעגלים גב אל גב'], ['22:00', 'זוגות גב אל גב'], ['22:30', 'מעגלים גב אל גב']] },
-        { name: 'אולם "אגם"', slots: [
-          ['19:15', 'מעגלים צעד ראשון'], ['20:30', 'זוגות צעד ראשון'], ['21:00', 'זוגות משתלבים']] }
-      ]
-    },
-    tue: {
-      day: 'שלישי', byday: 'TU', anchor: '2026-11-03', time: '19:30', durationMin: 225,
-      where: 'מרכז הספורט, כפר המכביה',
-      parking: 'חניה חינם במלון הכפר ובחניון מרכז הספורט · יש להביא את פתק החניה לקופה',
-      price: '40 ₪',
-      waze: 'https://waze.com/ul/hsv8y2e8ku',
-      whatsapp: 'https://chat.whatsapp.com/BCYU5z8vwCcL4H38ai8HNM',
-      img: 'images/site/class-tuesday-maccabiah.jpg',
-      team: '',
-      halls: [
-        { name: 'אולם', who: 'עם גדי ביטון ואלמוג בן עמי', slots: [
-          ['19:30', 'מעגלים'], ['20:15', 'זוגות'], ['21:00', 'מעגלים'],
-          ['21:30', 'זוגות'], ['22:00', 'מעגלים'], ['22:45', 'זוגות עד הסוף']] },
-        { name: 'סטודיו גב אל גב', who: 'עם הילה בר', slots: [
-          ['19:30', ''], ['20:15', ''], ['21:00', 'זוגות'],
-          ['21:30', 'מעגלים'], ['22:00', 'זוגות'], ['22:45', 'מעגלים בקשות']] },
-        { name: 'סטודיו מתחילים-משתלבים', who: 'עם יעל פרקש', slots: [
-          ['19:30', 'מעגלים מתחילים'], ['20:15', 'מעגלים מתחילים + משתלבים'], ['21:00', 'זוגות'],
-          ['21:30', 'מעגלים משתלבים'], ['22:00', 'סיום']] }
-      ]
-    },
-    thu: {
-      day: 'חמישי', byday: 'TH', anchor: '2026-11-05', time: '20:00', durationMin: 315,
-      where: 'מרכז הספורט, אוניברסיטת תל אביב',
-      parking: 'חניה חינם · חניון חיצוני שער 9 | חניון פנימי דרך שער 4',
-      price: '40 ₪',
-      waze: 'https://ul.waze.com/ul?ll=32.11526595%2C34.80205446&navigate=yes&zoom=17',
-      whatsapp: 'https://chat.whatsapp.com/BCYU5z8vwCcL4H38ai8HNM',
-      img: 'images/site/class-thursday-tau.jpg',
-      team: '',
-      halls: [
-        { name: 'אולם', slots: [
-          ['20:00', 'מעגלים'], ['20:30', 'זוגות'], ['21:00', 'מעגלים'], ['21:30', 'זוגות'],
-          ['22:00', 'מעגלים'], ['22:30', 'זוגות'], ['23:00', 'שורות'], ['23:15', 'מעגלים'],
-          ['23:45', 'זוגות'], ['00:15', 'מעגלים'], ['00:45', 'זוגות']] },
-        { name: 'סטודיו תחתון', slots: [
-          ['20:00', 'מעגלים מיוחדים'], ['20:30', 'מעגלים'], ['21:00', 'זוגות'], ['21:30', 'מעגלים'],
-          ['22:00', 'זוגות'], ['22:30', 'מעגלים'], ['23:00', 'זוגות נוסטלגיה'], ['23:45', 'סיום']] },
-        { name: 'סטודיו עליון', slots: [
-          ['20:00', 'מעגלים מתחילים'], ['21:00', 'זוגות מתחילים']] }
-      ]
-    }
-  };
-
-  const $ = id => document.getElementById(id);
-  const pad = n => String(n).padStart(2, '0');
-  const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-
-  function nextSession(g) {
-    const [y, m, d] = g.anchor.split('-').map(Number);
-    const [hh, mm] = g.time.split(':').map(Number);
-    const s = new Date(y, m - 1, d, hh, mm);
-    const now = new Date();
-    while (s.getTime() + g.durationMin * 60000 < now.getTime()) s.setDate(s.getDate() + 7);
-    return s;
-  }
-
-  function stamp(dt) {
-    return `${dt.getFullYear()}${pad(dt.getMonth() + 1)}${pad(dt.getDate())}T${pad(dt.getHours())}${pad(dt.getMinutes())}00`;
-  }
-
-  function render(key) {
-    const g = GROUPS[key];
-    document.querySelectorAll('.picker button').forEach(b =>
-      b.setAttribute('aria-selected', String(b.dataset.g === key)));
-    $('hero').style.setProperty('--hero-img', `url('${g.img}')`);
-
-    $('f-when').textContent = `כל יום ${g.day}, החל מ-${g.time}`;
-    $('f-where').textContent = g.where;
-    $('f-parking').textContent = g.parking ? `🅿️ ${g.parking}` : '';
-    $('f-price').textContent = g.price;
-    $('a-wa').hidden = !g.whatsapp;
-    if (g.whatsapp) $('a-wa').href = g.whatsapp;
-    $('a-waze').href = g.waze;
-    $('a-ask').href = 'https://wa.me/972524444700?text='
-      + encodeURIComponent(`היי, יש לי שאלה לגבי ההרקדה ביום ${g.day}`);
-
-    $('f-team').textContent = g.team ? `מרקידים: ${g.team}` : '';
-    $('f-team').hidden = !g.team;
-    $('halls').innerHTML = g.halls.map(h => `
-      <div class="hall">
-        <div class="hall-head"><h3>${esc(h.name)}</h3>${h.who ? `<p>${esc(h.who)}</p>` : ''}</div>
-        <ul class="slots">${h.slots.map(([t, a]) =>
-          `<li><time>${t}</time><span class="${a ? '' : 'empty'}">${a ? esc(a) : '—'}</span></li>`).join('')}</ul>
-      </div>`).join('');
-
-    const s = nextSession(g);
-    const e = new Date(s.getTime() + g.durationMin * 60000);
-    const title = `הרקדה עם גדי ביטון — יום ${g.day}`;
-    const details = `הרקדת ריקודי עם עם גדי ביטון. כניסה ${g.price}, תשלום במקום.`;
-    $('a-gcal').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
-      + '&text=' + encodeURIComponent(title)
-      + '&dates=' + stamp(s) + '/' + stamp(e)
-      + '&ctz=Asia/Jerusalem'
-      + '&recur=' + encodeURIComponent('RRULE:FREQ=WEEKLY;BYDAY=' + g.byday)
-      + '&location=' + encodeURIComponent(g.where)
-      + '&details=' + encodeURIComponent(details);
-    $('b-ics').onclick = () => {
-      const ics = [
-        'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Gadi Bitton//Harkadot//HE', 'CALSCALE:GREGORIAN',
-        'BEGIN:VEVENT',
-        'UID:harkada-' + key + '@gadibitton',
-        'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
-        'DTSTART;TZID=Asia/Jerusalem:' + stamp(s),
-        'DTEND;TZID=Asia/Jerusalem:' + stamp(e),
-        'RRULE:FREQ=WEEKLY;BYDAY=' + g.byday,
-        'SUMMARY:' + title,
-        'LOCATION:' + g.where.replace(/,/g, '\\,'),
-        'DESCRIPTION:' + details.replace(/,/g, '\\,'),
-        'BEGIN:VALARM', 'TRIGGER:-PT2H', 'ACTION:DISPLAY', 'DESCRIPTION:' + title, 'END:VALARM',
-        'END:VEVENT', 'END:VCALENDAR'
-      ].join('\r\n');
-      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `harkada-${key}.ics`;
-      document.body.appendChild(a); a.click(); a.remove();
-    };
-  }
-
-  document.querySelectorAll('.picker button').forEach(b =>
-    b.addEventListener('click', () => {
-      render(b.dataset.g);
-      history.replaceState(null, '', '?g=' + b.dataset.g);
-    }));
-
-  $('b-cal').addEventListener('click', () => {
-    const open = $('cal-choices').classList.toggle('open');
-    $('b-cal').setAttribute('aria-expanded', String(open));
-  });
-
-  const param = new URLSearchParams(location.search).get('g');
-  render(GROUPS[param] ? param : 'sun');
-</script>
+<script src="js/landing-defaults.js?v=1"></script>
+<script src="js/landing.js?v=1"></script>
 </body>
 </html>
