@@ -56,6 +56,33 @@
   const stamp = dt => `${dt.getFullYear()}${pad(dt.getMonth() + 1)}${pad(dt.getDate())}T${pad(dt.getHours())}${pad(dt.getMinutes())}00`;
   const fmtDate = iso => { const [, m, d] = iso.split('-'); return `${+d}.${+m}`; };
 
+  // Optional per-day colour (#rrggbb): replaces the purple of the header, the selected tab and the
+  // schedule headings. Light colours are darkened until white text on them stays readable.
+  const BASE = { main: '#2d1b4e', deep: '#1a0f30' };
+  function shade(hex, f) {
+    const n = parseInt(hex.slice(1), 16);
+    const c = [n >> 16, (n >> 8) & 255, n & 255].map(v => Math.max(0, Math.min(255, Math.round(v * f))));
+    return '#' + c.map(v => v.toString(16).padStart(2, '0')).join('');
+  }
+  function lum(hex) {
+    const n = parseInt(hex.slice(1), 16);
+    const l = [n >> 16, (n >> 8) & 255, n & 255].map(v => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); });
+    return .2126 * l[0] + .7152 * l[1] + .0722 * l[2];
+  }
+  function dayColor(g) {
+    if (!/^#[0-9a-f]{6}$/i.test(g.color || '')) return null;
+    let main = g.color.toLowerCase();
+    for (let i = 0; i < 12 && lum(main) > .18; i++) main = shade(main, .88);
+    return { main, deep: shade(main, .55) };
+  }
+  function applyColor(c) {
+    const s = document.documentElement.style;
+    s.setProperty('--plum', (c || BASE).main);
+    s.setProperty('--plum-deep', (c || BASE).deep);
+    const meta = document.querySelector('meta[name=theme-color]');
+    if (meta) meta.content = (c || BASE).main;
+  }
+
   let C, current = 0;
 
   function renderStatic() {
@@ -79,7 +106,7 @@
     picker.style.gridTemplateColumns = `repeat(${Math.max(groups.length, 1)}, 1fr)`;
     picker.hidden = groups.length < 2;
     picker.innerHTML = groups.map((g, i) =>
-      `<button role="tab" data-i="${i}" aria-selected="false"><strong>יום ${esc(g.day)}</strong><small>${esc(g.place)}</small></button>`).join('');
+      `<button role="tab" data-i="${i}" aria-selected="false" style="${dayColor(g) ? '--day:' + dayColor(g).main : ''}"><strong>יום ${esc(g.day)}</strong><small>${esc(g.place)}</small></button>`).join('');
     picker.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
       renderGroup(+b.dataset.i);
       history.replaceState(null, '', '?g=' + (SLUG[BYDAY[groups[+b.dataset.i].day]] || b.dataset.i));
@@ -116,6 +143,7 @@
     current = Math.min(Math.max(i, 0), groups.length - 1);
     const g = groups[current], t = C.texts || {};
     document.querySelectorAll('#picker button').forEach(b => b.setAttribute('aria-selected', String(+b.dataset.i === current)));
+    applyColor(dayColor(g));
     resolveImg(g.image).then(src => {
       if (current === groups.indexOf(g)) $('hero').style.setProperty('--hero-img', src ? `url('${src}')` : 'none');
     });

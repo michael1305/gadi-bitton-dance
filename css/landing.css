@@ -64,6 +64,8 @@ h1 .l2 { display: block; color: var(--gold); }
 .picker button strong { font-size: 1.15rem; font-weight: 900; }
 .picker button small { font-size: .85rem; }
 .picker button[aria-selected="true"] { background: var(--plum); color: #fff; }
+.picker button { border-top: 4px solid var(--day, transparent); }
+.hero, .picker button, .hall-head { transition: background .3s, color .2s; }
 .picker button[aria-selected="true"] small { color: var(--gold); }
 .picker button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
