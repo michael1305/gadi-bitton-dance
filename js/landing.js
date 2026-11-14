@@ -190,6 +190,18 @@
     const groups = C.groups || [];
     let idx = groups.findIndex(g => BYDAY[g.day] === param.slice(0, 2));
     if (idx < 0 && /^\d+$/.test(param)) idx = +param;
+    // No day in the link: open on the nearest upcoming day, today included
+    // (e.g. Fri–Sun → Sunday, Mon–Tue → Tuesday, Wed–Thu → Thursday).
+    if (idx < 0 && groups.length) {
+      const today = new Date().getDay();
+      let best = Infinity;
+      groups.forEach((g, i) => {
+        const wd = WEEKDAY[BYDAY[g.day]];
+        if (wd === undefined) return;
+        const ahead = (wd - today + 7) % 7;
+        if (ahead < best) { best = ahead; idx = i; }
+      });
+    }
     renderGroup(idx < 0 ? 0 : idx);
     document.body.classList.remove('loading');
   }
