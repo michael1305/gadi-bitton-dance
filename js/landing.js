@@ -145,7 +145,7 @@
     document.querySelectorAll('#picker button').forEach(b => b.setAttribute('aria-selected', String(+b.dataset.i === current)));
     applyColor(dayColor(g));
     resolveImg(g.image).then(src => {
-      if (current === groups.indexOf(g)) $('hero').style.setProperty('--hero-img', src ? `url('${src}')` : 'none');
+      if (current === groups.indexOf(g)) $('hero').style.setProperty('--hero-img', src ? `url('${new URL(src, location.href).href}')` : 'none');
     });
 
     $('f-when').textContent = fill(t.whenTemplate, g);
