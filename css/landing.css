@@ -24,7 +24,7 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero {
-  position: relative; color: #fff; overflow: hidden;
+  position: relative; color: var(--on-day, #fff); overflow: hidden;
   background: linear-gradient(160deg, var(--plum) 0%, var(--plum-deep) 100%);
   padding: 28px 0 88px;
 }
@@ -33,6 +33,8 @@ img { max-width: 100%; display: block; }
   background: var(--hero-img) center/cover no-repeat;
   opacity: .22; transition: background-image .3s;
 }
+.light-day .hero::before { opacity: .1; filter: grayscale(1); }
+.light-day .lead, .light-day .brand span { opacity: 1; }
 .hero .wrap { position: relative; }
 .brand { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
 .brand-logo { width: min(86%, 380px); height: auto; filter: drop-shadow(0 4px 14px rgba(0,0,0,.35)); }
@@ -42,7 +44,7 @@ h1 {
   margin: 20px 0 10px; font-weight: 900; letter-spacing: -.5px;
 }
 h1 .l1 { display: block; }
-h1 .l2 { display: block; color: var(--gold); }
+h1 .l2 { display: block; color: var(--on-day-accent, var(--gold)); }
 .tag {
   display: inline-block; padding: 4px 12px; border-radius: 99px;
   background: var(--rose); color: #fff; font-weight: 700; font-size: .9rem;
@@ -63,10 +65,10 @@ h1 .l2 { display: block; color: var(--gold); }
 }
 .picker button strong { font-size: 1.15rem; font-weight: 900; }
 .picker button small { font-size: .85rem; }
-.picker button[aria-selected="true"] { background: var(--plum); color: #fff; }
+.picker button[aria-selected="true"] { background: var(--plum); color: var(--on-day, #fff); }
 .picker button { border-top: 4px solid var(--day, transparent); }
 .hero, .picker button, .hall-head { transition: background .3s, color .2s; }
-.picker button[aria-selected="true"] small { color: var(--gold); }
+.picker button[aria-selected="true"] small { color: var(--on-day-accent, var(--gold)); }
 .picker button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
 /* Cards */
@@ -88,9 +90,9 @@ h1 .l2 { display: block; color: var(--gold); }
 /* Schedule */
 .halls { display: grid; gap: 14px; }
 .hall { border: 2px solid var(--line); border-radius: 14px; overflow: hidden; }
-.hall-head { background: var(--plum); color: #fff; padding: 10px 14px; }
+.hall-head { background: var(--plum); color: var(--on-day, #fff); padding: 10px 14px; }
 .hall-head h3 { margin: 0; font-size: 1.1rem; font-weight: 900; }
-.hall-head p { margin: 0; font-size: .9rem; color: var(--gold); font-weight: 500; }
+.hall-head p { margin: 0; font-size: .9rem; color: var(--on-day-accent, var(--gold)); font-weight: 500; }
 .slots { list-style: none; margin: 0; padding: 0; }
 .slots li {
   display: grid; grid-template-columns: 62px 1fr; gap: 10px; align-items: center;

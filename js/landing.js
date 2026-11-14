@@ -69,20 +69,29 @@
     const l = [n >> 16, (n >> 8) & 255, n & 255].map(v => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); });
     return .2126 * l[0] + .7152 * l[1] + .0722 * l[2];
   }
+  // Light colours (e.g. yellow) keep their real shade and switch the text on them to black;
+  // dark colours keep white text.
   function dayColor(g) {
     if (!/^#[0-9a-f]{6}$/i.test(g.color || '')) return null;
-    let main = g.color.toLowerCase();
-    for (let i = 0; i < 12 && lum(main) > .18; i++) main = shade(main, .88);
-    return { main, deep: shade(main, .55) };
+    const main = g.color.toLowerCase();
+    const light = lum(main) > .3;
+    return light
+      ? { main, deep: shade(main, .82), ink: '#141414', accent: '#5c2a00', logo: 'images/site/logo.png' }
+      : { main, deep: shade(main, .55), ink: '#fff', accent: '', logo: '' };
   }
   function applyColor(c) {
     const s = document.documentElement.style;
-    s.setProperty('--plum', (c || BASE).main);
-    s.setProperty('--plum-deep', (c || BASE).deep);
+    const v = c || BASE;
+    s.setProperty('--plum', v.main);
+    s.setProperty('--plum-deep', v.deep);
+    if (c && c.accent) { s.setProperty('--on-day', c.ink); s.setProperty('--on-day-accent', c.accent); }
+    else { s.removeProperty('--on-day'); s.removeProperty('--on-day-accent'); }
+    document.documentElement.classList.toggle('light-day', !!(c && c.accent));
+    const logo = document.querySelector('.brand-logo');
+    if (logo) logo.src = (c && c.logo) || 'images/site/logo-white.png';
     const meta = document.querySelector('meta[name=theme-color]');
-    if (meta) meta.content = (c || BASE).main;
+    if (meta) meta.content = v.main;
   }
-
   let C, current = 0;
 
   function renderStatic() {
