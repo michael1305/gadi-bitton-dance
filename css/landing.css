@@ -113,8 +113,8 @@ h1 .l2 { display: block; color: var(--on-day-accent, var(--gold)); }
 }
 .btn-wa { background: var(--wa); color: #fff; }
 .wa-ic { width: 26px; height: 26px; flex: none; }
-.btn-gold { background: var(--gold); color: var(--plum-deep); }
-.btn-ghost { background: var(--card); color: var(--plum); border: 2px solid var(--line); }
+.btn-gold { background: #33ccff; color: #08263a; }
+.btn-ghost { background: var(--card); color: var(--ink); border: 2px solid var(--line); }
 .btn:active { transform: translateY(1px); }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .cal-choices { display: none; gap: 10px; grid-template-columns: 1fr 1fr; }
