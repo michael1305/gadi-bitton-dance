@@ -172,6 +172,7 @@
 
     const halls = (g.halls || []).filter(h => h && (h.name || (h.slots || []).length));
     $('b-sched').hidden = !halls.length;
+    $('row-top').classList.toggle('solo', !halls.length);
     $('sched-h').textContent = `${String(t.scheduleTitle || '').trim() || 'לוח זמנים'} · יום ${g.day}`;
     if (!halls.length) showSchedule(false);
     $('f-team').textContent = g.team ? `מרקידים: ${g.team}` : '';
