@@ -108,7 +108,7 @@
     $('price-k').textContent = t.priceLabel || '';
     $('price-note').textContent = t.priceNote || '';
     $('join-text').textContent = t.joinText || '';
-    $('sched-h').textContent = t.scheduleTitle || '';
+    $('sched-btn-text').textContent = String(t.scheduleTitle || '').trim() || 'לוח זמנים';
 
     const groups = C.groups || [];
     const picker = $('picker');
@@ -171,7 +171,9 @@
     $('a-ask').href = 'https://wa.me/' + String(ask.phone || '').replace(/\D/g, '') + '?text=' + encodeURIComponent(fill(ask.message, g));
 
     const halls = (g.halls || []).filter(h => h && (h.name || (h.slots || []).length));
-    $('sched').hidden = !halls.length;
+    $('b-sched').hidden = !halls.length;
+    $('sched-h').textContent = `${String(t.scheduleTitle || '').trim() || 'לוח זמנים'} · יום ${g.day}`;
+    if (!halls.length) showSchedule(false);
     $('f-team').textContent = g.team ? `מרקידים: ${g.team}` : '';
     $('f-team').hidden = !g.team;
     $('halls').innerHTML = halls.map(h => `
@@ -216,6 +218,20 @@
     };
   }
 
+  // The schedule is its own page: #schedule in the address, so the phone's Back button returns too.
+  function showSchedule(on) {
+    $('sched').hidden = !on;
+    document.body.classList.toggle('sched-open', on);
+    if (on) $('sched').scrollTop = 0;
+  }
+  let pushedSchedule = false;
+  $('b-sched').addEventListener('click', () => { pushedSchedule = true; location.hash = 'schedule'; });
+  const closeSchedule = () => { if (pushedSchedule) history.back(); else { history.replaceState(null, '', location.pathname + location.search); showSchedule(false); } };
+  $('b-back').addEventListener('click', closeSchedule);
+  $('b-back2').addEventListener('click', closeSchedule);
+  window.addEventListener('hashchange', () => { const on = location.hash === '#schedule' && !$('b-sched').hidden; if (!on) pushedSchedule = false; showSchedule(on); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('sched').hidden) closeSchedule(); });
+
   $('b-cal').addEventListener('click', () => {
     const open = $('cal-choices').classList.toggle('open');
     $('b-cal').setAttribute('aria-expanded', String(open));
@@ -242,6 +258,7 @@
     }
     renderGroup(idx < 0 ? 0 : idx);
     document.body.classList.remove('loading');
+    if (location.hash === '#schedule' && !$('b-sched').hidden) showSchedule(true);
   }
 
   const defaults = (window.LANDING_DEFAULTS || {})[PAGE_ID];

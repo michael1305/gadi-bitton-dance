@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://firestore.googleapis.com">
-<link rel="stylesheet" href="css/landing.css?v=6">
+<link rel="stylesheet" href="css/landing.css?v=7">
 </head>
 <body class="loading" data-page="beginners">
 
@@ -46,6 +46,7 @@
         <a class="btn btn-gold" id="a-waze" target="_blank" rel="noopener">🚗 ניווט בוויז</a>
         <button class="btn btn-ghost" id="b-cal" type="button" aria-expanded="false">🗓️ הוספה ליומן</button>
       </div>
+      <button class="btn btn-sched" id="b-sched" type="button" hidden>📋 <span id="sched-btn-text">לוח זמנים</span></button>
       <div class="cal-choices" id="cal-choices">
         <a class="btn btn-ghost" id="a-gcal" target="_blank" rel="noopener">Google יומן</a>
         <button class="btn btn-ghost" id="b-ics" type="button">אייפון / אאוטלוק</button>
@@ -53,11 +54,6 @@
     </div>
   </section>
 
-  <section class="card" id="sched" aria-labelledby="sched-h" hidden>
-    <h2 id="sched-h"></h2>
-    <p class="team" id="f-team"></p>
-    <div class="halls" id="halls"></div>
-  </section>
 
   <section class="card about" id="about" aria-labelledby="about-h">
     <h2 id="about-h"></h2>
@@ -82,12 +78,24 @@
   </div>
 </main>
 
+<div class="sched-view" id="sched" role="dialog" aria-modal="true" aria-labelledby="sched-h" hidden>
+  <div class="sched-top">
+    <button class="back" id="b-back" type="button">→ חזרה</button>
+    <h2 id="sched-h"></h2>
+  </div>
+  <div class="wrap sched-body">
+    <p class="team" id="f-team"></p>
+    <div class="halls" id="halls"></div>
+    <button class="btn btn-ghost back-bottom" id="b-back2" type="button">→ חזרה לפרטי ההרקדה</button>
+  </div>
+</div>
+
 <footer>
   <span id="foot-1"></span><br>
   <strong id="foot-2"></strong>
 </footer>
 
 <script src="js/landing-defaults.js?v=2"></script>
-<script src="js/landing.js?v=7"></script>
+<script src="js/landing.js?v=8"></script>
 </body>
 </html>
