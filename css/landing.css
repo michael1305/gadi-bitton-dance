@@ -150,10 +150,12 @@ footer strong { color: var(--ink); }
 
 /* Schedule page (opens over the landing page; #schedule in the address, phone Back closes it) */
 .btn-sched { background: var(--plum); color: var(--on-day, #fff); }
-.sched-view { position: fixed; inset: 0; z-index: 30; background: var(--cream); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+/* Same hero stays on top; the details/picker are swapped for the schedule */
+body.sched-open main { display: none; }
+.sched-view { position: relative; max-width: 640px; margin: -60px auto 0; padding: 0 16px; }
 .sched-top {
-  position: sticky; top: 0; z-index: 1; display: flex; align-items: center; gap: 10px;
-  padding: 12px 16px; background: var(--plum); color: var(--on-day, #fff); box-shadow: 0 6px 18px -10px rgba(0,0,0,.5);
+  position: sticky; top: 8px; z-index: 1; display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; border-radius: var(--radius); background: var(--plum); color: var(--on-day, #fff); box-shadow: var(--shadow);
 }
 .sched-top h2 { margin: 0; font-size: 1.15rem; font-weight: 900; }
 .back {
@@ -161,6 +163,5 @@ footer strong { color: var(--ink); }
   padding: 8px 12px; background: rgba(255,255,255,.18); color: inherit; flex: none;
 }
 .light-day .back { background: rgba(0,0,0,.1); }
-.sched-body { padding-top: 16px; padding-bottom: 30px; }
+.sched-body { padding: 16px 0 10px; }
 .back-bottom { width: 100%; margin-top: 18px; }
-body.sched-open { overflow: hidden; }

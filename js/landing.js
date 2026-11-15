@@ -222,7 +222,7 @@
   function showSchedule(on) {
     $('sched').hidden = !on;
     document.body.classList.toggle('sched-open', on);
-    if (on) $('sched').scrollTop = 0;
+    window.scrollTo(0, 0);
   }
   let pushedSchedule = false;
   $('b-sched').addEventListener('click', () => { pushedSchedule = true; location.hash = 'schedule'; });
