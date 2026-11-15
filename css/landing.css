@@ -170,3 +170,4 @@ body.sched-open main { display: none; }
 #row-top .btn-wa { font-size: .92rem; line-height: 1.25; gap: 6px; padding: 10px 10px; }
 #row-top .btn-wa .wa-ic { width: 22px; height: 22px; }
 @media (max-width: 380px) { #row-top:not(.solo) { grid-template-columns: 1fr 1fr; } }
+body.sched-open .hero .lead { display: none; }
