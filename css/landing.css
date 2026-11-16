@@ -173,6 +173,6 @@ body.sched-open main { display: none; }
 body.sched-open .hero .lead { display: none; }
 
 /* Learned-dances videos */
-.btn-yt { background: #e62117; color: #fff; }
+.btn-yt { background: var(--plum); color: var(--on-day, #fff); }
 .videos h2 { margin-bottom: 12px; }
 @media (max-width: 380px) { #videos-row:not(.solo) { grid-template-columns: 1fr 1fr; } }
