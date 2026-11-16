@@ -18,7 +18,8 @@ window.LANDING_DEFAULTS = {
       priceNote: 'תשלום במקום באשראי או מזומן',
       joinText: 'הצטרפות לקהילת החוג בווטסאפ',
       scheduleTitle: 'לוח זמנים',
-      calendarTitle: 'חוג ריקודי עם למתחילים — יום {day}'
+      calendarTitle: 'חוג ריקודי עם למתחילים — יום {day}',
+      videosTitle: 'צפייה בריקודים שנלמדו'
     },
     groups: [
       {
@@ -29,7 +30,8 @@ window.LANDING_DEFAULTS = {
         waze: 'https://waze.com/ul?ll=32.19350049,34.84822512&navigate=yes',
         whatsapp: 'https://chat.whatsapp.com/IefeSq7Fv2jA0nJXpXyS4p',
         image: 'images/site/class-sunday-raanana-tall.jpg',
-        team: '', halls: []
+        team: '', halls: [], ytCircles: 'https://www.youtube.com/playlist?list=PLHguNqj8th5I',
+        ytCouples: 'https://www.youtube.com/playlist?list=PLNa5Wx1atpGg'
       },
       {
         day: 'שלישי', place: 'כפר המכביה', start: '2026-11-17', time: '19:30', durationMin: 120,
@@ -39,7 +41,7 @@ window.LANDING_DEFAULTS = {
         waze: 'https://waze.com/ul/hsv8y2e8ku',
         whatsapp: 'https://chat.whatsapp.com/JaqRFRweupeDl6DxsIDOIM',
         image: 'images/site/class-tuesday-maccabiah.jpg',
-        team: '', halls: []
+        team: '', halls: [], ytCircles: '', ytCouples: ''
       },
       {
         day: 'חמישי', place: 'אוניברסיטת ת״א', start: '2026-11-19', time: '20:00', durationMin: 120,
@@ -49,7 +51,7 @@ window.LANDING_DEFAULTS = {
         waze: 'https://ul.waze.com/ul?ll=32.11526595%2C34.80205446&navigate=yes&zoom=17&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location',
         whatsapp: 'https://chat.whatsapp.com/HavD03JZoxA72E73dVvhkr',
         image: 'images/site/class-thursday-tau.jpg',
-        team: '', halls: []
+        team: '', halls: [], ytCircles: '', ytCouples: ''
       }
     ],
     about: {
@@ -98,7 +100,8 @@ window.LANDING_DEFAULTS = {
       priceNote: 'תשלום במקום באשראי או מזומן',
       joinText: 'הצטרפות לקהילת ההרקדה בווטסאפ',
       scheduleTitle: 'לוח זמנים',
-      calendarTitle: 'הרקדה עם גדי ביטון — יום {day}'
+      calendarTitle: 'הרקדה עם גדי ביטון — יום {day}',
+      videosTitle: 'צפייה בריקודים שנלמדו'
     },
     groups: [
       {

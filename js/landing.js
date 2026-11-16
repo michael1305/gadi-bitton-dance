@@ -167,6 +167,13 @@
     $('a-wa').href = g.whatsapp || '#';
     $('a-waze').hidden = !g.waze;
     $('a-waze').href = g.waze || '#';
+    // "Dances we've learned" — YouTube playlists per group (hidden until a group has them)
+    const yc = String(g.ytCircles || '').trim(), yz = String(g.ytCouples || '').trim();
+    $('videos').hidden = !yc && !yz;
+    $('videos-h').textContent = '🎬 ' + (String(t.videosTitle || '').trim() || 'צפייה בריקודים שנלמדו');
+    $('a-yt-circles').hidden = !yc; $('a-yt-circles').href = yc || '#';
+    $('a-yt-couples').hidden = !yz; $('a-yt-couples').href = yz || '#';
+    $('videos-row').classList.toggle('solo', !yc || !yz);
     const ask = C.ask || {};
     $('a-ask').href = 'https://wa.me/' + String(ask.phone || '').replace(/\D/g, '') + '?text=' + encodeURIComponent(fill(ask.message, g));
 
@@ -266,6 +273,14 @@
   fsGet('sitePages/' + PAGE_ID, 3500).then(doc => {
     let saved = null;
     try { saved = JSON.parse(doc?.fields?.data?.stringValue || 'null'); } catch (e) { saved = null; }
+    if (saved && saved.groups && defaults) {
+      // Fields added after the page was saved: take them from the defaults (same day) until edited.
+      saved.texts = Object.assign({}, defaults.texts, saved.texts);
+      saved.groups.forEach(g => {
+        const d = (defaults.groups || []).find(x => x.day === g.day) || {};
+        Object.keys(d).forEach(k => { if (g[k] === undefined) g[k] = d[k]; });
+      });
+    }
     start(saved && saved.groups ? saved : defaults);
   });
 })();
