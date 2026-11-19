@@ -41,7 +41,8 @@ window.LANDING_DEFAULTS = {
         waze: 'https://waze.com/ul/hsv8y2e8ku',
         whatsapp: 'https://chat.whatsapp.com/JaqRFRweupeDl6DxsIDOIM',
         image: 'images/site/class-tuesday-maccabiah.jpg',
-        team: '', halls: [], ytCircles: '', ytCouples: ''
+        team: '', halls: [], ytCircles: 'https://www.youtube.com/playlist?list=PLIe-g7A2kppc',
+        ytCouples: 'https://www.youtube.com/playlist?list=PLNa5Wx1atpGg'
       },
       {
         day: 'חמישי', place: 'אוניברסיטת ת״א', start: '2026-11-19', time: '20:00', durationMin: 120,
