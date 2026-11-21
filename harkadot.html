@@ -13,11 +13,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://firestore.googleapis.com">
-<link rel="stylesheet" href="css/landing.css?v=12">
+<link rel="stylesheet" href="css/landing.css?v=13">
 </head>
 <body class="loading" data-page="harkadot">
 
 <header class="hero" id="hero">
+  <button class="lang-btn" id="b-lang" type="button" lang="en">English</button>
   <div class="wrap">
     <div class="brand">
       <img class="brand-logo" src="images/site/logo-white.png" alt="גדי ביטון">
@@ -35,8 +36,8 @@
   <section class="card" aria-labelledby="details-h">
     <h2 id="details-h"></h2>
     <ul class="facts">
-      <li><span class="ic">📅</span><div><div class="k">מתי</div><div class="v" id="f-when"></div><div class="sub" id="f-start"></div></div></li>
-      <li><span class="ic">📍</span><div><div class="k">איפה</div><div class="v" id="f-where"></div><div class="sub" id="f-parking"></div></div></li>
+      <li><span class="ic">📅</span><div><div class="k" data-en="When">מתי</div><div class="v" id="f-when"></div><div class="sub" id="f-start"></div></div></li>
+      <li><span class="ic">📍</span><div><div class="k" data-en="Where">איפה</div><div class="v" id="f-where"></div><div class="sub" id="f-parking"></div></div></li>
       <li><span class="ic">💰</span><div><div class="k" id="price-k"></div><div class="v" id="f-price"></div><div class="sub" id="price-note"></div></div></li>
     </ul>
 
@@ -46,12 +47,12 @@
         <a class="btn btn-wa" id="a-wa" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 0 1 5.3 16C5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> <span id="join-text"></span></a>
       </div>
       <div class="row">
-        <a class="btn btn-gold" id="a-waze" target="_blank" rel="noopener">🚗 ניווט בוויז</a>
-        <button class="btn btn-ghost" id="b-cal" type="button" aria-expanded="false">🗓️ הוספה ליומן</button>
+        <a class="btn btn-gold" id="a-waze" target="_blank" rel="noopener" data-en="🚗 Navigate with Waze">🚗 ניווט בוויז</a>
+        <button class="btn btn-ghost" id="b-cal" type="button" aria-expanded="false" data-en="🗓️ Add to calendar">🗓️ הוספה ליומן</button>
       </div>
       <div class="cal-choices" id="cal-choices">
-        <a class="btn btn-ghost" id="a-gcal" target="_blank" rel="noopener">Google יומן</a>
-        <button class="btn btn-ghost" id="b-ics" type="button">אייפון / אאוטלוק</button>
+        <a class="btn btn-ghost" id="a-gcal" target="_blank" rel="noopener" data-en="Google Calendar">Google יומן</a>
+        <button class="btn btn-ghost" id="b-ics" type="button" data-en="iPhone / Outlook">אייפון / אאוטלוק</button>
       </div>
     </div>
   </section>
@@ -59,8 +60,8 @@
   <section class="card videos" id="videos" aria-labelledby="videos-h" hidden>
     <h2 id="videos-h"></h2>
     <div class="row" id="videos-row">
-      <a class="btn btn-yt" id="a-yt-circles" target="_blank" rel="noopener">▶ מעגלים</a>
-      <a class="btn btn-yt" id="a-yt-couples" target="_blank" rel="noopener">▶ זוגות</a>
+      <a class="btn btn-yt" id="a-yt-circles" target="_blank" rel="noopener" data-en="▶ Circles">▶ מעגלים</a>
+      <a class="btn btn-yt" id="a-yt-couples" target="_blank" rel="noopener" data-en="▶ Couples">▶ זוגות</a>
     </div>
   </section>
 
@@ -90,13 +91,13 @@
 
 <div class="sched-view" id="sched" role="dialog" aria-modal="true" aria-labelledby="sched-h" hidden>
   <div class="sched-top">
-    <button class="back" id="b-back" type="button">→ חזרה</button>
+    <button class="back" id="b-back" type="button" data-en="← Back">→ חזרה</button>
     <h2 id="sched-h"></h2>
   </div>
   <div class="wrap sched-body">
     <p class="team" id="f-team"></p>
     <div class="halls" id="halls"></div>
-    <button class="btn btn-ghost back-bottom" id="b-back2" type="button">→ חזרה לפרטי ההרקדה</button>
+    <button class="btn btn-ghost back-bottom" id="b-back2" type="button" data-en="← Back to details">→ חזרה לפרטי ההרקדה</button>
   </div>
 </div>
 
@@ -106,6 +107,7 @@
 </footer>
 
 <script src="js/landing-defaults.js?v=6"></script>
-<script src="js/landing.js?v=11"></script>
+<script src="js/landing-en.js?v=2"></script>
+<script src="js/landing.js?v=12"></script>
 </body>
 </html>

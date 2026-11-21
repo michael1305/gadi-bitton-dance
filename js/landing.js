@@ -13,7 +13,36 @@
   const $ = id => document.getElementById(id);
   const pad = n => String(n).padStart(2, '0');
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const fill = (tpl, g) => String(tpl || '').replace(/\{day\}/g, g.day).replace(/\{time\}/g, g.time).replace(/\{place\}/g, g.place);
+  // Language: Hebrew (default) or English (?lang=en / the toggle in the header; remembered on this device).
+  const EN = window.LANDING_EN;
+  let LANG = (() => {
+    const q = new URLSearchParams(location.search).get('lang');
+    if (q) return q === 'en' && EN ? 'en' : 'he';
+    try { return localStorage.getItem('landingLang') === 'en' && EN ? 'en' : 'he'; } catch (e) { return 'he'; }
+  })();
+  const T = s => LANG === 'en' ? EN.tr(s) : (s ?? '');
+  const dayName = g => LANG === 'en' ? EN.UI.day(g.day) : g.day;
+  const fill = (tpl, g) => String(T(tpl) || '').replace(/\{day\}/g, dayName(g)).replace(/\{time\}/g, g.time).replace(/\{place\}/g, T(g.place));
+  function setUrl(gSlug) {
+    const p = new URLSearchParams(location.search);
+    if (gSlug !== undefined) p.set('g', gSlug);
+    if (LANG === 'en') p.set('lang', 'en'); else p.delete('lang');
+    history.replaceState(null, '', location.pathname + (String(p) ? '?' + p : '') + location.hash);
+  }
+  let heTitle = '';
+  function applyLang() {
+    const en = LANG === 'en';
+    document.documentElement.lang = en ? 'en' : 'he';
+    document.documentElement.dir = en ? 'ltr' : 'rtl';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if (el.dataset.he === undefined) el.dataset.he = el.textContent;
+      el.textContent = en ? el.dataset.en : el.dataset.he;
+    });
+    if (!heTitle) heTitle = document.title;
+    document.title = en ? (EN.UI.title[PAGE_ID] || heTitle) : heTitle;
+    const b = $('b-lang');
+    if (b) { b.hidden = !EN; b.textContent = en ? 'עברית' : 'English'; b.lang = en ? 'he' : 'en'; }
+  }
 
   function fsGet(path, ms) {
     const ctl = new AbortController();
@@ -96,54 +125,54 @@
 
   function renderStatic() {
     const h = C.hero || {}, t = C.texts || {};
-    $('brand-text').textContent = h.brand || '';
-    $('h-l1').textContent = h.l1 || '';
-    $('h-l2').textContent = h.l2 || '';
+    $('brand-text').textContent = T(h.brand);
+    $('h-l1').textContent = T(h.l1);
+    $('h-l2').textContent = T(h.l2);
     $('h-l1').parentElement.hidden = !h.l1 && !h.l2;
-    $('h-tag').textContent = h.tag || '';
+    $('h-tag').textContent = T(h.tag);
     $('h-tag').hidden = !h.tag;
-    $('h-lead').textContent = h.lead || '';
+    $('h-lead').textContent = T(h.lead);
 
-    $('details-h').textContent = t.detailsTitle || '';
-    $('price-k').textContent = t.priceLabel || '';
-    $('price-note').textContent = t.priceNote || '';
-    $('join-text').textContent = t.joinText || '';
-    $('sched-btn-text').textContent = String(t.scheduleTitle || '').trim() || 'לוח זמנים';
+    $('details-h').textContent = T(t.detailsTitle);
+    $('price-k').textContent = T(t.priceLabel);
+    $('price-note').textContent = T(t.priceNote);
+    $('join-text').textContent = T(t.joinText);
+    $('sched-btn-text').textContent = T(String(t.scheduleTitle || '').trim() || 'לוח זמנים');
 
     const groups = C.groups || [];
     const picker = $('picker');
     picker.style.gridTemplateColumns = `repeat(${Math.max(groups.length, 1)}, 1fr)`;
     picker.hidden = groups.length < 2;
     picker.innerHTML = groups.map((g, i) =>
-      `<button role="tab" data-i="${i}" aria-selected="false" style="${dayColor(g) ? '--day:' + dayColor(g).main : ''}"><strong>יום ${esc(g.day)}</strong><small>${esc(g.place)}</small></button>`).join('');
+      `<button role="tab" data-i="${i}" aria-selected="false" style="${dayColor(g) ? '--day:' + dayColor(g).main : ''}"><strong>${LANG === 'en' ? esc(EN.UI.day(g.day)) : 'יום ' + esc(g.day)}</strong><small>${esc(T(g.place))}</small></button>`).join('');
     picker.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
       renderGroup(+b.dataset.i);
-      history.replaceState(null, '', '?g=' + (SLUG[BYDAY[groups[+b.dataset.i].day]] || b.dataset.i));
+      setUrl(SLUG[BYDAY[groups[+b.dataset.i].day]] || b.dataset.i);
     }));
 
     const a = C.about || {};
     const paras = (a.paragraphs || []).filter(p => String(p).trim());
     $('about').hidden = !paras.length;
-    $('about-h').textContent = a.title || '';
-    $('about-body').innerHTML = paras.map(p => `<p>${esc(p)}</p>`).join('');
+    $('about-h').textContent = T(a.title);
+    $('about-body').innerHTML = paras.map(p => `<p>${esc(T(p))}</p>`).join('');
 
     const ins = C.instructor || {};
     $('instructor').hidden = !ins.name && !ins.bio;
-    $('gadi-h').textContent = ins.name || '';
-    $('gadi-bio').textContent = ins.bio || '';
+    $('gadi-h').textContent = T(ins.name);
+    $('gadi-bio').textContent = T(ins.bio);
     $('gadi-img').alt = ins.name || '';
     resolveImg(ins.photo).then(src => { $('gadi-img').src = src; $('gadi-img').hidden = !src; });
 
     const pk = C.perks || {};
     const items = (pk.items || []).filter(x => x && String(x.text || '').trim());
     $('perks').hidden = !items.length;
-    $('perks-h').textContent = pk.title || '';
-    $('perks-list').innerHTML = items.map(x => `<li><span>${esc(x.icon)}</span><span>${esc(x.text)}</span></li>`).join('');
+    $('perks-h').textContent = T(pk.title);
+    $('perks-list').innerHTML = items.map(x => `<li><span>${esc(x.icon)}</span><span>${esc(T(x.text))}</span></li>`).join('');
 
-    $('ask-text').textContent = (C.ask || {}).text || '';
+    $('ask-text').textContent = T((C.ask || {}).text);
     $('a-ask').hidden = !(C.ask || {}).phone;
-    $('foot-1').textContent = (C.footer || {}).line1 || '';
-    $('foot-2').textContent = (C.footer || {}).line2 || '';
+    $('foot-1').textContent = T((C.footer || {}).line1);
+    $('foot-2').textContent = T((C.footer || {}).line2);
   }
 
   function renderGroup(i) {
@@ -159,10 +188,10 @@
 
     $('f-when').textContent = fill(t.whenTemplate, g);
     const today = new Date(); today.setHours(0, 0, 0, 0);
-    $('f-start').textContent = g.start && new Date(g.start + 'T00:00') >= today ? `החל מ-${fmtDate(g.start)}` : (t.activeNote || '');
-    $('f-where').textContent = g.where || '';
-    $('f-parking').textContent = g.parking ? `🅿️ ${g.parking}` : '';
-    $('f-price').textContent = g.price || '';
+    $('f-start').textContent = g.start && new Date(g.start + 'T00:00') >= today ? (LANG === 'en' ? EN.UI.from(fmtDate(g.start)) : `החל מ-${fmtDate(g.start)}`) : T(t.activeNote);
+    $('f-where').textContent = T(g.where);
+    $('f-parking').textContent = g.parking ? `🅿️ ${T(g.parking)}` : '';
+    $('f-price').textContent = T(g.price);
     $('a-wa').hidden = !g.whatsapp;
     $('a-wa').href = g.whatsapp || '#';
     $('a-waze').hidden = !g.waze;
@@ -170,7 +199,7 @@
     // "Dances we've learned" — YouTube playlists per group (hidden until a group has them)
     const yc = String(g.ytCircles || '').trim(), yz = String(g.ytCouples || '').trim();
     $('videos').hidden = !yc && !yz;
-    $('videos-h').textContent = '🎬 ' + (String(t.videosTitle || '').trim() || 'צפייה בריקודים שנלמדו');
+    $('videos-h').textContent = '🎬 ' + T(String(t.videosTitle || '').trim() || 'צפייה בריקודים שנלמדו');
     $('a-yt-circles').hidden = !yc; $('a-yt-circles').href = yc || '#';
     $('a-yt-couples').hidden = !yz; $('a-yt-couples').href = yz || '#';
     $('videos-row').classList.toggle('solo', !yc || !yz);
@@ -180,28 +209,28 @@
     const halls = (g.halls || []).filter(h => h && (h.name || (h.slots || []).length));
     $('b-sched').hidden = !halls.length;
     $('row-top').classList.toggle('solo', !halls.length);
-    $('sched-h').textContent = `${String(t.scheduleTitle || '').trim() || 'לוח זמנים'} · יום ${g.day}`;
+    $('sched-h').textContent = `${T(String(t.scheduleTitle || '').trim() || 'לוח זמנים')} · ${LANG === 'en' ? '' : 'יום '}${dayName(g)}`;
     if (!halls.length) showSchedule(false);
-    $('f-team').textContent = g.team ? `מרקידים: ${g.team}` : '';
+    $('f-team').textContent = g.team ? (LANG === 'en' ? EN.UI.team : 'מרקידים: ') + T(g.team) : '';
     $('f-team').hidden = !g.team;
     $('halls').innerHTML = halls.map(h => `
       <div class="hall">
-        <div class="hall-head"><h3>${esc(h.name)}</h3>${h.who ? `<p>${esc(h.who)}</p>` : ''}</div>
+        <div class="hall-head"><h3>${esc(T(h.name))}</h3>${h.who ? `<p>${esc(T(h.who))}</p>` : ''}</div>
         <ul class="slots">${(h.slots || []).map(s =>
-          `<li><time>${esc(s.time)}</time><span class="${s.what ? '' : 'empty'}">${s.what ? esc(s.what) : '—'}</span></li>`).join('')}</ul>
+          `<li><time>${esc(s.time)}</time><span class="${s.what ? '' : 'empty'}">${s.what ? esc(T(s.what)) : '—'}</span></li>`).join('')}</ul>
       </div>`).join('');
 
     const byday = BYDAY[g.day] || 'SU';
     const s = nextSession(g);
     const e = new Date(s.getTime() + (+g.durationMin || 120) * 60000);
     const title = fill(t.calendarTitle, g);
-    const details = [g.price, g.whatsapp ? 'קבוצת ווטסאפ: ' + g.whatsapp : ''].filter(Boolean).join(' · ');
+    const details = [T(g.price), g.whatsapp ? (LANG === 'en' ? EN.UI.waGroup : 'קבוצת ווטסאפ: ') + g.whatsapp : ''].filter(Boolean).join(' · ');
     $('a-gcal').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
       + '&text=' + encodeURIComponent(title)
       + '&dates=' + stamp(s) + '/' + stamp(e)
       + '&ctz=Asia/Jerusalem'
       + '&recur=' + encodeURIComponent('RRULE:FREQ=WEEKLY;BYDAY=' + byday)
-      + '&location=' + encodeURIComponent(g.where || '')
+      + '&location=' + encodeURIComponent(T(g.where))
       + '&details=' + encodeURIComponent(details);
     $('b-ics').onclick = () => {
       const icsEsc = v => String(v || '').replace(/[,;\\]/g, m => '\\' + m);
@@ -214,7 +243,7 @@
         'DTEND;TZID=Asia/Jerusalem:' + stamp(e),
         'RRULE:FREQ=WEEKLY;BYDAY=' + byday,
         'SUMMARY:' + icsEsc(title),
-        'LOCATION:' + icsEsc(g.where),
+        'LOCATION:' + icsEsc(T(g.where)),
         'DESCRIPTION:' + icsEsc(details),
         'BEGIN:VALARM', 'TRIGGER:-PT2H', 'ACTION:DISPLAY', 'DESCRIPTION:' + icsEsc(title), 'END:VALARM',
         'END:VEVENT', 'END:VCALENDAR'
@@ -245,8 +274,18 @@
     $('b-cal').setAttribute('aria-expanded', String(open));
   });
 
+  const langBtn = $('b-lang');
+  if (langBtn) langBtn.addEventListener('click', () => {
+    LANG = LANG === 'en' ? 'he' : 'en';
+    try { localStorage.setItem('landingLang', LANG); } catch (e) { /* private mode */ }
+    setUrl();
+    applyLang();
+    if (C) { renderStatic(); renderGroup(current); }
+  });
+
   function start(content) {
     C = content;
+    applyLang();
     renderStatic();
     const param = (new URLSearchParams(location.search).get('g') || '').toUpperCase();
     const groups = C.groups || [];
