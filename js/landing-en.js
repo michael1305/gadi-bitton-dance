@@ -101,6 +101,7 @@ window.LANDING_EN = (function () {
     ['סדנת מעגלים', 'Circles workshop'], ['סדנת זוגות', 'Couples workshop'],
     ['גב אל גב', 'back-to-back'], ['מתחילים פלוס', 'Beginners plus'], ['מתחילים + משתלבים', 'beginners + intermediate'],
     ['זוגות עד הסוף', 'Couples till the end'], ['מעגלים בקשות', 'Circles — requests'], ['(חדר חוגים)', '(activity room)'],
+    ['(גלריה)', '(gallery)'], ['גלריה', 'Gallery'],
     ['מעגלים', 'Circles'], ['זוגות', 'Couples'], ['שורות', 'Lines'], ['מתחילים', 'beginners'], ['משתלבים', 'intermediate'],
     ['למפגש', 'per session'], ['מיוחדים', 'special'], ['נוסטלגיה', 'nostalgia'], ['סיום', 'End'], ['בקשות', 'requests'], ['סטודיו', 'Studio'], ['אולם', 'Hall']
   ].concat(NAMES.map(([he, en]) => ['ו' + he, 'and ' + en]), NAMES, [['עם', 'with'], ['ו', 'and']]);
@@ -110,11 +111,16 @@ window.LANDING_EN = (function () {
   const phraseRe = PHRASES.map(([he, en]) =>
     [new RegExp('(^|[^\\u0590-\\u05FF])' + he.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\u0590-\\u05FF])', 'g'), en]);
 
-  function tr(s) {
+  // Translations made automatically by the back office when a page is saved (content.en).
+  let AUTO = {};
+  const setAuto = m => { AUTO = (m && typeof m === 'object') ? m : {}; };
+
+  function tr(s, noAuto) {
     const n = norm(s).replace(/(\d+(?:[.,]\d+)?)\s*₪/g, '₪$1'); // 40 ₪ → ₪40
     if (!n) return s ?? '';
     if (!HEB.test(n)) return n;
     if (EXACT[n] !== undefined) return EXACT[n];
+    if (!noAuto && AUTO[n]) return AUTO[n];
     let out = n;
     for (const [re, en] of phraseRe) out = out.replace(re, (m, pre) => pre + en);
     if (HEB.test(out)) return n; // unknown wording — keep the Hebrew rather than half-translate
@@ -122,5 +128,5 @@ window.LANDING_EN = (function () {
     return out.charAt(0).toUpperCase() + out.slice(1);
   }
 
-  return { tr, UI, DAYS };
+  return { tr, setAuto, UI, DAYS };
 })();

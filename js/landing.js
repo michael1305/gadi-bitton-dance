@@ -22,7 +22,7 @@
   })();
   const T = s => LANG === 'en' ? EN.tr(s) : (s ?? '');
   const dayName = g => LANG === 'en' ? EN.UI.day(g.day) : g.day;
-  const fill = (tpl, g) => String(T(tpl) || '').replace(/\{day\}/g, dayName(g)).replace(/\{time\}/g, g.time).replace(/\{place\}/g, T(g.place));
+  const fill = (tpl, g) => String(T(tpl) || '').replace(/\{day\}/g, dayName(g)).replace(/\{time\}/g, LANG === 'en' ? g.time : '⁦' + g.time + '⁩').replace(/\{place\}/g, T(g.place));
   function setUrl(gSlug) {
     const p = new URLSearchParams(location.search);
     if (gSlug !== undefined) p.set('g', gSlug);
@@ -320,6 +320,7 @@
         Object.keys(d).forEach(k => { if (g[k] === undefined) g[k] = d[k]; });
       });
     }
+    if (EN && saved && saved.en) EN.setAuto(saved.en);
     start(saved && saved.groups ? saved : defaults);
   });
 })();
