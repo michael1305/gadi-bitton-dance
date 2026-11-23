@@ -196,6 +196,9 @@
     $('a-wa').href = g.whatsapp || '#';
     $('a-waze').hidden = !g.waze;
     $('a-waze').href = g.waze || '#';
+    // Google Maps button — English view only; the Hebrew view keeps Waze alone
+    const gm = LANG === 'en' ? String(g.gmaps || '').trim() : '';
+    if ($('a-gmaps')) { $('a-gmaps').hidden = !gm; $('a-gmaps').href = gm || '#'; $('row-nav').classList.toggle('maps', !!gm); }
     // "Dances we've learned" — YouTube playlists per group (hidden until a group has them)
     const yc = String(g.ytCircles || '').trim(), yz = String(g.ytCouples || '').trim();
     $('videos').hidden = !yc && !yz;

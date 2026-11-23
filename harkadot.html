@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://firestore.googleapis.com">
-<link rel="stylesheet" href="css/landing.css?v=14">
+<link rel="stylesheet" href="css/landing.css?v=15">
 </head>
 <body class="loading" data-page="harkadot">
 
@@ -46,8 +46,9 @@
         <button class="btn btn-sched" id="b-sched" type="button" hidden>📋 <span id="sched-btn-text">לוח זמנים</span></button>
         <a class="btn btn-wa" id="a-wa" target="_blank" rel="noopener"><svg class="wa-ic" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 0 1 5.3 16C5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> <span id="join-text"></span></a>
       </div>
-      <div class="row">
+      <div class="row" id="row-nav">
         <a class="btn btn-gold" id="a-waze" target="_blank" rel="noopener" data-en="🚗 Navigate with Waze">🚗 ניווט בוויז</a>
+        <a class="btn btn-gold" id="a-gmaps" target="_blank" rel="noopener" hidden>📍 Google Maps</a>
         <button class="btn btn-ghost" id="b-cal" type="button" aria-expanded="false" data-en="🗓️ Add to calendar">🗓️ הוספה ליומן</button>
       </div>
       <div class="cal-choices" id="cal-choices">
@@ -106,8 +107,8 @@
   <strong id="foot-2"></strong>
 </footer>
 
-<script src="js/landing-defaults.js?v=6"></script>
+<script src="js/landing-defaults.js?v=7"></script>
 <script src="js/landing-en.js?v=4"></script>
-<script src="js/landing.js?v=13"></script>
+<script src="js/landing.js?v=14"></script>
 </body>
 </html>
