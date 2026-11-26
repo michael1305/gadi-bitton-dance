@@ -204,12 +204,15 @@
     const gm = LANG === 'en' ? String(g.gmaps || '').trim() : '';
     if ($('a-gmaps')) { $('a-gmaps').hidden = !gm; $('a-gmaps').href = gm || '#'; $('row-nav').classList.toggle('maps', !!gm); }
     // "Dances we've learned" — YouTube playlists per group (hidden until a group has them)
-    const yc = String(g.ytCircles || '').trim(), yz = String(g.ytCouples || '').trim();
-    $('videos').hidden = !yc && !yz;
+    // ytAll = one playlist with circles and couples together (replaces the two buttons)
+    const ya = String(g.ytAll || '').trim();
+    const yc = ya ? '' : String(g.ytCircles || '').trim(), yz = ya ? '' : String(g.ytCouples || '').trim();
+    $('a-yt-all').hidden = !ya; $('a-yt-all').href = ya || '#';
+    $('videos').hidden = !yc && !yz && !ya;
     $('videos-h').textContent = '🎬 ' + T(String(t.videosTitle || '').trim() || 'צפייה בריקודים שנלמדו');
     $('a-yt-circles').hidden = !yc; $('a-yt-circles').href = yc || '#';
     $('a-yt-couples').hidden = !yz; $('a-yt-couples').href = yz || '#';
-    $('videos-row').classList.toggle('solo', !yc || !yz);
+    $('videos-row').classList.toggle('solo', !!ya || !yc || !yz);
     const ask = C.ask || {};
     $('a-ask').href = 'https://wa.me/' + String(ask.phone || '').replace(/\D/g, '') + '?text=' + encodeURIComponent(fill(ask.message, g));
 

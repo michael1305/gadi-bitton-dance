@@ -52,8 +52,8 @@ window.LANDING_DEFAULTS = {
         waze: 'https://ul.waze.com/ul?ll=32.11526595%2C34.80205446&navigate=yes&zoom=17&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location',
         whatsapp: 'https://chat.whatsapp.com/HavD03JZoxA72E73dVvhkr',
         image: 'images/site/class-thursday-tau.jpg',
-        team: '', halls: [], ytCircles: 'https://www.youtube.com/playlist?list=PLVDr3pj_60jI',
-        ytCouples: 'https://www.youtube.com/playlist?list=PLR_fg0pldz4w'
+        team: '', halls: [], ytCircles: '', ytCouples: '',
+        ytAll: 'https://www.youtube.com/playlist?list=PLVDr3pj_60jI'
       }
     ],
     about: {
