@@ -176,6 +176,8 @@ body.sched-open .hero .lead { display: none; }
 @media (max-width: 380px) { .row.maps { grid-template-columns: 1fr 1fr; } }
 
 /* Learned-dances videos */
+.btn-fb { background: #1877f2; color: #fff; width: 100%; margin-top: 10px; }
+.btn-fb .wa-ic { width: 22px; height: 22px; }
 .btn-yt { background: var(--plum); color: var(--on-day, #fff); }
 .videos h2 { margin-bottom: 12px; }
 @media (max-width: 380px) { #videos-row:not(.solo) { grid-template-columns: 1fr 1fr; } }

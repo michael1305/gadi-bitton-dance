@@ -103,7 +103,8 @@ window.LANDING_DEFAULTS = {
       joinText: 'הצטרפות לקהילת ההרקדה בווטסאפ',
       scheduleTitle: 'לוח זמנים',
       calendarTitle: 'הרקדה עם גדי ביטון — יום {day}',
-      videosTitle: 'צפייה בריקודים שנלמדו'
+      videosTitle: 'צפייה בריקודים שנלמדו',
+      partnerText: 'מציאת בן / בת זוג להרקדה'
     },
     groups: [
       {
@@ -114,6 +115,7 @@ window.LANDING_DEFAULTS = {
         waze: 'https://waze.com/ul?ll=32.19350049,34.84822512&navigate=yes',
         gmaps: 'https://maps.app.goo.gl/MPmga8cpt5bXLnAC7',
         whatsapp: 'https://chat.whatsapp.com/BCYU5z8vwCcL4H38ai8HNM',
+        partnerLink: 'https://www.facebook.com/groups/315210246628021',
         image: 'images/site/class-sunday-raanana-tall.jpg',
         team: 'גדי ביטון · ורדית חדד · הילה בר · גלית שם טוב',
         halls: [
@@ -135,6 +137,7 @@ window.LANDING_DEFAULTS = {
         waze: 'https://waze.com/ul/hsv8y2e8ku',
         gmaps: 'https://maps.app.goo.gl/mjuRktjt53GbxyG27',
         whatsapp: 'https://chat.whatsapp.com/BCYU5z8vwCcL4H38ai8HNM',
+        partnerLink: 'https://www.facebook.com/groups/315210246628021',
         image: 'images/site/class-tuesday-maccabiah.jpg',
         team: '',
         halls: [
@@ -157,6 +160,7 @@ window.LANDING_DEFAULTS = {
         waze: 'https://ul.waze.com/ul?ll=32.11526595%2C34.80205446&navigate=yes&zoom=17',
         gmaps: 'https://maps.app.goo.gl/QMd24KP5ekPrYyhT9',
         whatsapp: 'https://chat.whatsapp.com/BCYU5z8vwCcL4H38ai8HNM',
+        partnerLink: 'https://www.facebook.com/groups/315210246628021',
         image: 'images/site/class-thursday-tau.jpg',
         team: '',
         halls: [

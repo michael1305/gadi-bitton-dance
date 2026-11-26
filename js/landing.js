@@ -196,6 +196,10 @@
     $('a-wa').href = g.whatsapp || '#';
     $('a-waze').hidden = !g.waze;
     $('a-waze').href = g.waze || '#';
+    // Find a dance partner (Facebook group) — full-width button under the actions
+    const pl = String(g.partnerLink || '').trim();
+    if ($('a-partner')) { $('a-partner').hidden = !pl; $('a-partner').href = pl || '#';
+      $('partner-text').textContent = T(String(t.partnerText || '').trim() || 'מציאת בן / בת זוג להרקדה'); }
     // Google Maps button — English view only; the Hebrew view keeps Waze alone
     const gm = LANG === 'en' ? String(g.gmaps || '').trim() : '';
     if ($('a-gmaps')) { $('a-gmaps').hidden = !gm; $('a-gmaps').href = gm || '#'; $('row-nav').classList.toggle('maps', !!gm); }

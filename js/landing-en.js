@@ -41,6 +41,7 @@ window.LANDING_EN = (function () {
     'חוג ריקודי עם למתחילים — יום {day}': 'Israeli folk dance for beginners — {day}',
     'הרקדה עם גדי ביטון — יום {day}': 'Israeli folk dancing with Gadi Bitton — {day}',
     'צפייה בריקודים שנלמדו': 'Watch the dances we learned',
+    'מציאת בן / בת זוג להרקדה': 'Find a dance partner',
     // about
     'קצת על החוג': 'About the class',
     'חוג המתחילים מהצעד הראשון מיועד למי שרוצה להתחיל לרקוד, וגם למי שרקד בעבר ורוצה לחזור.': 'The “From the First Step” beginners class is for anyone who wants to start dancing — and for those who danced in the past and want to come back.',
